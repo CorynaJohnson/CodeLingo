@@ -1,0 +1,9 @@
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\CodeLingo.dacpac
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\CodeLingo.dll
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\CodeLingo.pdb
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Model.xml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\refactor.xml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\postdeploy.sql
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\predeploy.sql
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.dll
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.pdb
