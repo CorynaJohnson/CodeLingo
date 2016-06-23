@@ -1,0 +1,14 @@
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\bin\Debug\LoginPage.exe.config
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\bin\Debug\LoginPage.exe
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\bin\Debug\LoginPage.pdb
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.csprojResolveAssemblyReference.cache
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\MainWindow.g.cs
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\App.g.cs
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage_MarkupCompile.cache
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage_MarkupCompile.lref
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\MainWindow.baml
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.g.resources
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.Properties.Resources.resources
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.csproj.GenerateResource.Cache
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.exe
+c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.pdb
