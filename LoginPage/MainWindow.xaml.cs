@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DevOne.Security.Cryptography.BCrypt;
+using System.Data.SqlClient;
 
 namespace LoginPage
 {
@@ -25,7 +26,43 @@ namespace LoginPage
         public MainWindow()
         {
             InitializeComponent();
-            
+            SqlConnection myConnection = new SqlConnection("user id=coryna_johnson;" +
+                                       "password=918210927Cj;server=aura.students.cset.oit.edu;" +
+                                       "Trusted_Connection=yes;" +
+                                       "database=database; " +
+                                       "connection timeout=30");
+            try
+            {
+                myConnection.Open();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            //example read from sql server
+            try
+            {
+                SqlDataReader myReader = null;
+                SqlCommand myCommand = new SqlCommand("select * from table",
+                                                         myConnection);
+                myReader = myCommand.ExecuteReader();
+                while (myReader.Read())
+                {
+                    Console.WriteLine(myReader["Column1"].ToString());
+                    Console.WriteLine(myReader["Column2"].ToString());
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            /* preventing SQL injection example
+            txtNam = getRequestString("CustomerName");
+            txtAdd = getRequestString("Address");
+            txtCit = getRequestString("City");
+            txtSQL = "INSERT INTO Customers (CustomerName,Address,City) Values(@0,@1,@2)";
+            db.Execute(txtSQL,txtNam,txtAdd,txtCit);*/
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -33,11 +70,15 @@ namespace LoginPage
             
         }
 
-        private void Hash_Password(string password)
+        /*******************************************
+        * Purpose: Will hash the user's password.
+        ********************************************/
+        private string Hash_Password(string password)
         {
             string salt = BCryptHelper.GenerateSalt(6);
             var hashedPassword = BCryptHelper.HashPassword(password, salt);
             Console.WriteLine(BCryptHelper.CheckPassword(password, hashedPassword));
+            return hashedPassword;
         }
         public void CreateMyPasswordTextBox()
         {
