@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DevOne.Security.Cryptography.BCrypt;
 
 namespace LoginPage
 {
@@ -33,6 +34,12 @@ namespace LoginPage
 
         }
 
+        private void Hash_Password(string password)
+        {
+            string salt = BCryptHelper.GenerateSalt(6);
+            var hashedPassword = BCryptHelper.HashPassword("password", salt);
+            Console.WriteLine(BCryptHelper.CheckPassword("password", hashedPassword));
+        }
         public void CreateMyPasswordTextBox()
         {
             // Create an instance of the TextBox control.
