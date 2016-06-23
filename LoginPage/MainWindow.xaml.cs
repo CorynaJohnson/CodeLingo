@@ -81,24 +81,31 @@ namespace LoginPage
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            
+            string name = NameField.Text;
+            string username = UserNameField.Text;
+            string password = PasswordField.Password;
+            password = Hash_Password(password);
+            Insert_UserInformation(name, username, password);
         }
 
         private void Insert_UserInformation(string name, string username, string password)
         {
             SqlConnection myConnection = Connect_to_Database();
+            
 
             //preventing SQL injection example
-            var sql = "INSERT INTO CL_UserInformation (@m_name, @m_username, @m_password)" +
+            var sql = "INSERT INTO CL_UserInformation (m_name, m_username, m_password)" +
                 "VALUES (@name_val, @username_val, @password_val);";
 
             using (var cmd = new SqlCommand(sql, myConnection))
             {
-                cmd.Parameters.AddWithValue("@name_val", name);
-                cmd.Parameters.AddWithValue("@username_val", username);
-                cmd.Parameters.AddWithValue("@password_val", password);
+                cmd.Parameters.Add("@name_val", name);
+                cmd.Parameters.Add("@username_val", username);
+                cmd.Parameters.Add("@password_val", password);
+                cmd.Connection = myConnection;
                 cmd.ExecuteNonQuery();
             }
+            myConnection.Close();
         }
 
         /*******************************************
