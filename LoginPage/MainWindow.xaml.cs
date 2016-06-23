@@ -16,6 +16,8 @@ using System.Windows.Shapes;
 using DevOne.Security.Cryptography.BCrypt;
 using System.Data.SqlClient;
 
+
+
 namespace LoginPage
 {
     /// <summary>
@@ -26,18 +28,7 @@ namespace LoginPage
         public MainWindow()
         {
             InitializeComponent();
-            SqlConnection myConnection = new SqlConnection("user id=coryna_johnson;" +
-                                       "password=918210927Cj;" +
-                                       "server=aura.students.cset.oit.edu;");
-            //open the connection to the database
-            try
-            {
-                myConnection.Open();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+            SqlConnection myConnection = Connect_to_Database();
 
             //example read from sql server
             try
@@ -56,12 +47,8 @@ namespace LoginPage
             {
                 Console.WriteLine(e.ToString());
             }
-            /* preventing SQL injection example
-            txtNam = getRequestString("CustomerName");
-            txtAdd = getRequestString("Address");
-            txtCit = getRequestString("City");
-            txtSQL = "INSERT INTO Customers (CustomerName,Address,City) Values(@0,@1,@2)";
-            db.Execute(txtSQL,txtNam,txtAdd,txtCit);*/
+            
+
 
             //close the connection to the database
             try
@@ -74,9 +61,44 @@ namespace LoginPage
             }
         }
 
+        private SqlConnection Connect_to_Database()
+        {
+            SqlConnection myConnection = new SqlConnection("user id=CodeLingo_app;" +
+                                       "password=password;" +
+                                       "server=aura.students.cset.oit.edu;");
+            //open the connection to the database
+            try
+            {
+                myConnection.Open();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return myConnection;
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void Insert_UserInformation(string name, string username, string password)
+        {
+            SqlConnection myConnection = Connect_to_Database();
+
+            //preventing SQL injection example
+            var sql = "INSERT INTO CL_UserInformation (@m_name, @m_username, @m_password)" +
+                "VALUES (@name_val, @username_val, @password_val);";
+
+            using (var cmd = new SqlCommand(sql, myConnection))
+            {
+                cmd.Parameters.AddWithValue("@name_val", name);
+                cmd.Parameters.AddWithValue("@username_val", username);
+                cmd.Parameters.AddWithValue("@password_val", password);
+                cmd.ExecuteNonQuery();
+            }
         }
 
         /*******************************************
