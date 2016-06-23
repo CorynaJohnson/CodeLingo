@@ -31,14 +31,13 @@ namespace LoginPage
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-
         }
 
         private void Hash_Password(string password)
         {
             string salt = BCryptHelper.GenerateSalt(6);
-            var hashedPassword = BCryptHelper.HashPassword("password", salt);
-            Console.WriteLine(BCryptHelper.CheckPassword("password", hashedPassword));
+            var hashedPassword = BCryptHelper.HashPassword(password, salt);
+            Console.WriteLine(BCryptHelper.CheckPassword(password, hashedPassword));
         }
         public void CreateMyPasswordTextBox()
         {
