@@ -27,10 +27,9 @@ namespace LoginPage
         {
             InitializeComponent();
             SqlConnection myConnection = new SqlConnection("user id=coryna_johnson;" +
-                                       "password=918210927Cj;server=aura.students.cset.oit.edu;" +
-                                       "Trusted_Connection=yes;" +
-                                       "database=database; " +
-                                       "connection timeout=30");
+                                       "password=918210927Cj;" +
+                                       "server=aura.students.cset.oit.edu;");
+            //open the connection to the database
             try
             {
                 myConnection.Open();
@@ -44,7 +43,7 @@ namespace LoginPage
             try
             {
                 SqlDataReader myReader = null;
-                SqlCommand myCommand = new SqlCommand("select * from table",
+                SqlCommand myCommand = new SqlCommand("select * from CL_UserInformation",
                                                          myConnection);
                 myReader = myCommand.ExecuteReader();
                 while (myReader.Read())
@@ -63,6 +62,16 @@ namespace LoginPage
             txtCit = getRequestString("City");
             txtSQL = "INSERT INTO Customers (CustomerName,Address,City) Values(@0,@1,@2)";
             db.Execute(txtSQL,txtNam,txtAdd,txtCit);*/
+
+            //close the connection to the database
+            try
+            {
+                myConnection.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -80,14 +89,14 @@ namespace LoginPage
             Console.WriteLine(BCryptHelper.CheckPassword(password, hashedPassword));
             return hashedPassword;
         }
-        public void CreateMyPasswordTextBox()
-        {
-            // Create an instance of the TextBox control.
-            System.Windows.Forms.TextBox Password = new System.Windows.Forms.TextBox();
-            // Set the maximum length of text in the control to eight.
-            Password.MaxLength = 8;
-            // Assign the asterisk to be the password character.
-            Password.PasswordChar = '*';
-        }
+        //public void CreateMyPasswordTextBox()
+        //{
+        //    // Create an instance of the TextBox control.
+        //    System.Windows.Forms.TextBox Password = new System.Windows.Forms.TextBox();
+        //    // Set the maximum length of text in the control to eight.
+        //    Password.MaxLength = 8;
+        //    // Assign the asterisk to be the password character.
+        //    Password.PasswordChar = '*';
+        //}
     }
 }

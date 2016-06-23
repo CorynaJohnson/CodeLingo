@@ -12,3 +12,4 @@ c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\De
 c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.csproj.GenerateResource.Cache
 c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.exe
 c:\users\coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\Debug\LoginPage.pdb
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\bin\Debug\DevOne.Security.Cryptography.BCrypt.dll
