@@ -28,39 +28,42 @@ namespace LoginPage
         public MainWindow()
         {
             InitializeComponent();
-            SqlConnection myConnection = Connect_to_Database();
+            //SqlConnection myConnection = Connect_to_Database();
 
             //example read from sql server
-            try
-            {
-                SqlDataReader myReader = null;
-                SqlCommand myCommand = new SqlCommand("select * from CL_UserInformation",
-                                                         myConnection);
-                myReader = myCommand.ExecuteReader();
-                while (myReader.Read())
-                {
-                    Console.WriteLine(myReader["Column1"].ToString());
-                    Console.WriteLine(myReader["Column2"].ToString());
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+            //try
+            //{
+            //    SqlDataReader myReader = null;
+            //    SqlCommand myCommand = new SqlCommand("select * from CL_UserInformation",
+            //                                             myConnection);
+            //    myReader = myCommand.ExecuteReader();
+            //    while (myReader.Read())
+            //    {
+            //        Console.WriteLine(myReader["Column1"].ToString());
+            //        Console.WriteLine(myReader["Column2"].ToString());
+            //    }
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.ToString());
+            //}
             
 
 
             //close the connection to the database
-            try
-            {
-                myConnection.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+            //try
+            //{
+            //    myConnection.Close();
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.ToString());
+            //}
         }
 
+        /*******************************************
+        * Purpose: Will connect to the database.
+        ********************************************/
         private SqlConnection Connect_to_Database()
         {
             SqlConnection myConnection = new SqlConnection("user id=CodeLingo_app;" +
@@ -79,21 +82,79 @@ namespace LoginPage
             return myConnection;
         }
 
+
+        /*******************************************
+        * Purpose: Will verify valid username and 
+        *   verify the passwords are the same.
+        ********************************************/
         private void button_Click(object sender, RoutedEventArgs e)
         {
             string name = NameField.Text;
             string username = UserNameField.Text;
             string password = PasswordField.Password;
-            password = Hash_Password(password);
-            Insert_UserInformation(name, username, password);
+            string passwordverify = PasswordFieldVerify.Password;
+
+            NameError.Visibility = Visibility.Hidden;
+            UserNameError.Visibility = Visibility.Hidden;
+            EmptyPasswordError.Visibility = Visibility.Hidden;
+            PasswordError.Visibility = Visibility.Hidden;
+
+            SqlConnection myConnection = Connect_to_Database();
+
+            SqlDataReader myReader = null;
+            SqlCommand myCommand = new SqlCommand("select m_username from CL_UserInformation",
+                                                     myConnection);
+            myReader = myCommand.ExecuteReader();
+            while (myReader.Read())
+            {
+                while(myReader["m_username"].ToString() != "" && myReader["m_username"].ToString() != username);
+                if(myReader["m_username"].ToString() == username)
+                {
+                    UserNameField.Text = "";
+                    UserNameError.Visibility = Visibility.Visible;
+                    break;
+                }
+            }
+
+            if (name == "")
+            {
+                NameError.Visibility = Visibility.Visible;
+            }
+            if (username == "")
+            {
+                UserNameError.Visibility = Visibility.Visible;
+            }
+            if(password == "")
+            {
+                EmptyPasswordError.Visibility = Visibility.Visible;
+            }
+            if (password != passwordverify)
+            {
+                PasswordError.Visibility = Visibility.Visible;
+                //reset password fields
+            }
+            if (myReader["m_username"].ToString() != username)
+            {
+                myConnection.Close();
+                password = Hash_Password(password);
+                Insert_UserInformation(name, username, password);
+                //myConnection = Connect_to_Database();
+                //go to login page
+            }
+            else
+                myConnection.Close();
         }
 
+        /*******************************************
+        * Purpose: Will insert user information into
+        *   the database.
+        ********************************************/
         private void Insert_UserInformation(string name, string username, string password)
         {
             SqlConnection myConnection = Connect_to_Database();
             
 
-            //preventing SQL injection example
+            //preventing SQL injection... hopefully
             var sql = "INSERT INTO CL_UserInformation (m_name, m_username, m_password)" +
                 "VALUES (@name_val, @username_val, @password_val);";
 
@@ -105,7 +166,14 @@ namespace LoginPage
                 cmd.Connection = myConnection;
                 cmd.ExecuteNonQuery();
             }
-            myConnection.Close();
+            try
+            {
+                myConnection.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
 
         /*******************************************
@@ -118,14 +186,5 @@ namespace LoginPage
             Console.WriteLine(BCryptHelper.CheckPassword(password, hashedPassword));
             return hashedPassword;
         }
-        //public void CreateMyPasswordTextBox()
-        //{
-        //    // Create an instance of the TextBox control.
-        //    System.Windows.Forms.TextBox Password = new System.Windows.Forms.TextBox();
-        //    // Set the maximum length of text in the control to eight.
-        //    Password.MaxLength = 8;
-        //    // Assign the asterisk to be the password character.
-        //    Password.PasswordChar = '*';
-        //}
     }
 }
