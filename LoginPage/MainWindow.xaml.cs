@@ -18,7 +18,7 @@ using System.Data.SqlClient;
 
 
 
-namespace LoginPage
+namespace CodeLingo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -116,6 +116,7 @@ namespace LoginPage
                 }
             }
 
+            //checking for blank or invalid fields
             if (name == "")
             {
                 NameError.Visibility = Visibility.Visible;
@@ -126,11 +127,16 @@ namespace LoginPage
             }
             if(password == "")
             {
-                EmptyPasswordError.Visibility = Visibility.Visible;
+                if (password == passwordverify)
+                    EmptyPasswordError.Visibility = Visibility.Visible;
+                if (PasswordError.Visibility == Visibility.Visible)
+                    PasswordError.Visibility = Visibility.Hidden;
             }
             if (password != passwordverify)
             {
                 PasswordError.Visibility = Visibility.Visible;
+                PasswordField.Clear();
+                PasswordFieldVerify.Clear();
                 //reset password fields
             }
             if (myReader["m_username"].ToString() != username)
