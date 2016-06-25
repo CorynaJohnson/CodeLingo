@@ -17,7 +17,6 @@ C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\LoginPage\obj\De
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\CodeLingo.exe.config
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\CodeLingo.exe
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\CodeLingo.pdb
-C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\DevOne.Security.Cryptography.BCrypt.dll
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\LoginPage.g.cs
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\RegistrationPage.g.cs
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\App.g.cs
@@ -31,3 +30,5 @@ C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\De
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.exe
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.pdb
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.csprojResolveAssemblyReference.cache
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\BCrypt.Net.dll
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\BCrypt.Net.xml

@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DevOne.Security.Cryptography.BCrypt;
+using BCrypt.Net;
 using System.Data.SqlClient;
 
 
@@ -28,38 +28,43 @@ namespace CodeLingo
         public RegistrationPage()
         {
             InitializeComponent();
-            //SqlConnection myConnection = Connect_to_Database();
 
-            //example read from sql server
-            //try
-            //{
-            //    SqlDataReader myReader = null;
-            //    SqlCommand myCommand = new SqlCommand("select * from CL_UserInformation",
-            //                                             myConnection);
-            //    myReader = myCommand.ExecuteReader();
-            //    while (myReader.Read())
-            //    {
-            //        Console.WriteLine(myReader["Column1"].ToString());
-            //        Console.WriteLine(myReader["Column2"].ToString());
-            //    }
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.ToString());
-            //}
+            string hash = Hash_Password("hello");
+            bool result = BCrypt.Net.BCrypt.Verify("hello", hash);
+            Console.WriteLine(hash);
+
+        //SqlConnection myConnection = Connect_to_Database();
+
+        //example read from sql server
+        //try
+        //{
+        //    SqlDataReader myReader = null;
+        //    SqlCommand myCommand = new SqlCommand("select * from CL_UserInformation",
+        //                                             myConnection);
+        //    myReader = myCommand.ExecuteReader();
+        //    while (myReader.Read())
+        //    {
+        //        Console.WriteLine(myReader["Column1"].ToString());
+        //        Console.WriteLine(myReader["Column2"].ToString());
+        //    }
+        //}
+        //catch (Exception e)
+        //{
+        //    Console.WriteLine(e.ToString());
+        //}
 
 
 
-            //close the connection to the database
-            //try
-            //{
-            //    myConnection.Close();
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.ToString());
-            //}
-        }
+        //close the connection to the database
+        //try
+        //{
+        //    myConnection.Close();
+        //}
+        //catch (Exception e)
+        //{
+        //    Console.WriteLine(e.ToString());
+        //}
+    }
 
         /*******************************************
         * Purpose: Will connect to the database.
@@ -93,7 +98,7 @@ namespace CodeLingo
             string username = UserNameField.Text;
             string password = PasswordField.Password;
             string passwordverify = PasswordFieldVerify.Password;
-            
+
 
             NameError.Visibility = Visibility.Hidden;
             UserNameError.Visibility = Visibility.Hidden;
@@ -109,20 +114,20 @@ namespace CodeLingo
             //myReader.Read();
             //if (myReader.Read())
             //{
-                while (myReader.Read())
+            while (myReader.Read())
+            {
+                if (myReader["m_username"].ToString() != "")
                 {
-                    if (myReader["m_username"].ToString() != "")
+                    if (myReader["m_username"].ToString() == username)
                     {
-                        if (myReader["m_username"].ToString() == username)
-                        {
-                            UserNameError.Visibility = Visibility.Visible;
-                            break;
-                        }
+                        UserNameError.Visibility = Visibility.Visible;
+                        break;
                     }
-                    myReader.NextResult();
                 }
+                //myReader.NextResult();
+            }
             //}
-            
+
 
             //checking for blank or invalid fields
             if (name == "")
@@ -133,10 +138,10 @@ namespace CodeLingo
             {
                 UserNameError.Visibility = Visibility.Visible;
             }
-            if(myReader.HasRows && myReader["m_username"].ToString() == username)
-            {
-                UserNameError.Visibility = Visibility.Visible;
-            }
+            //if (myReader.HasRows && myReader["m_username"].ToString() == username)
+            //{
+            //    UserNameError.Visibility = Visibility.Visible;
+            //}
             if (password == "")
             {
                 if (password == passwordverify)
@@ -151,7 +156,7 @@ namespace CodeLingo
                 PasswordFieldVerify.Clear();
                 //reset password fields
             }
-            if(UserNameError.Visibility == Visibility.Hidden || UserNameField.Visibility == Visibility.Hidden)
+            if (UserNameError.Visibility == Visibility.Hidden)
             {
                 if (password != "" && password == passwordverify)
                     if (name != "")
@@ -180,7 +185,6 @@ namespace CodeLingo
         {
             SqlConnection myConnection = Connect_to_Database();
 
-
             //preventing SQL injection... hopefully
             var sql = "INSERT INTO CL_UserInformation (m_name, m_username, m_password)" +
                 "VALUES (@name_val, @username_val, @password_val);";
@@ -206,11 +210,10 @@ namespace CodeLingo
         /*******************************************
         * Purpose: Will hash the user's password.
         ********************************************/
-        private string Hash_Password(string password)
+        static private string Hash_Password(string password)
         {
-            string salt = BCryptHelper.GenerateSalt(6);
-            var hashedPassword = BCryptHelper.HashPassword(password, salt);
-            Console.WriteLine(BCryptHelper.CheckPassword(password, hashedPassword));
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password, 12);
+
             return hashedPassword;
         }
 
@@ -224,5 +227,6 @@ namespace CodeLingo
             page.Show();
             this.Hide();
         }
+    
     }
 }
