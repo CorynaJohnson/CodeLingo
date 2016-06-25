@@ -30,3 +30,4 @@ C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\De
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.csproj.GenerateResource.Cache
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.exe
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.pdb
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.csprojResolveAssemblyReference.cache

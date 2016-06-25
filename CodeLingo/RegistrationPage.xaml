@@ -9,8 +9,9 @@
     <Viewbox>
 
         <Grid>
-            <Grid Background="Black" Opacity=".5"/>
+            <Grid Background="Black" Opacity=".5" Margin="-31,0,-30,0"/>
             <Label x:Name="textBox" Height="45" Margin="148,0,149,266" Content="Registration Form" Width="220" FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}"/>
+
             <Grid x:Name="RegistrationForm" Margin="6,40,-6,10">
                 <Border
             MinWidth="150"
@@ -32,12 +33,14 @@
                         <PasswordBox x:Name="PasswordFieldVerify" HorizontalAlignment="Left" Height="23" Margin="228,121,0,0" VerticalAlignment="Top" Width="150" BorderThickness="1" FontSize="16"/>
 
                         <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Margin="268,158,0,-7" VerticalAlignment="Top" Width="75" Height="25" Click="button_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16"/>
+                        <Button x:Name="Back_Button" Content="Back" HorizontalAlignment="Left" Margin="69,-50,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Back_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16"/>
                     </Grid>
                 </Border>
                 <Label x:Name="UserNameError" HorizontalAlignment="Left" Height="30" Margin="353,76,0,0" Content="*INVALID USERNAME" VerticalAlignment="Top" Width="98" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="14" Foreground="Red" Visibility="Hidden" Background="{x:Null}"/>
                 <Label x:Name="PasswordError" Margin="353,109,39,128" Content="*PASSWORDS DO NOT MATCH" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="14" Foreground="Red" Visibility="Hidden"  Background="{x:Null}"/>
                 <Label x:Name="EmptyPasswordError" Margin="353,109,39,128" Content="*MUST PROVIDE PASSWORD" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="14" Foreground="Red" Visibility="Hidden"  Background="{x:Null}"/>
                 <Label x:Name="NameError" Margin="353,45,39,192" Content="*MUST PROVIDE A NAME" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="14" Foreground="Red" Visibility="Hidden" Background="{x:Null}"/>
+
             </Grid>
         </Grid>
     </Viewbox>

@@ -31,8 +31,9 @@ namespace CodeLingo
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {
             RegistrationPage page = new RegistrationPage();
-            this.Hide();
+            this.RegistrationSuccessful.Visibility = Visibility.Hidden;
             page.Show();
+            this.Hide();
         }
     }
 }

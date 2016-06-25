@@ -47,7 +47,7 @@ namespace CodeLingo
             //{
             //    Console.WriteLine(e.ToString());
             //}
-            
+
 
 
             //close the connection to the database
@@ -93,6 +93,7 @@ namespace CodeLingo
             string username = UserNameField.Text;
             string password = PasswordField.Password;
             string passwordverify = PasswordFieldVerify.Password;
+            
 
             NameError.Visibility = Visibility.Hidden;
             UserNameError.Visibility = Visibility.Hidden;
@@ -105,16 +106,23 @@ namespace CodeLingo
             SqlCommand myCommand = new SqlCommand("select m_username from CL_UserInformation",
                                                      myConnection);
             myReader = myCommand.ExecuteReader();
-            while (myReader.Read())
-            {
-                while(myReader["m_username"].ToString() != "" && myReader["m_username"].ToString() != username);
-                if(myReader["m_username"].ToString() == username)
+            //myReader.Read();
+            //if (myReader.Read())
+            //{
+                while (myReader.Read())
                 {
-                    UserNameField.Text = "";
-                    UserNameError.Visibility = Visibility.Visible;
-                    break;
+                    if (myReader["m_username"].ToString() != "")
+                    {
+                        if (myReader["m_username"].ToString() == username)
+                        {
+                            UserNameError.Visibility = Visibility.Visible;
+                            break;
+                        }
+                    }
+                    myReader.NextResult();
                 }
-            }
+            //}
+            
 
             //checking for blank or invalid fields
             if (name == "")
@@ -125,7 +133,11 @@ namespace CodeLingo
             {
                 UserNameError.Visibility = Visibility.Visible;
             }
-            if(password == "")
+            if(myReader.HasRows && myReader["m_username"].ToString() == username)
+            {
+                UserNameError.Visibility = Visibility.Visible;
+            }
+            if (password == "")
             {
                 if (password == passwordverify)
                     EmptyPasswordError.Visibility = Visibility.Visible;
@@ -139,13 +151,22 @@ namespace CodeLingo
                 PasswordFieldVerify.Clear();
                 //reset password fields
             }
-            if (myReader["m_username"].ToString() != username)
+            if(UserNameError.Visibility == Visibility.Hidden || UserNameField.Visibility == Visibility.Hidden)
             {
-                myConnection.Close();
-                password = Hash_Password(password);
-                Insert_UserInformation(name, username, password);
-                //myConnection = Connect_to_Database();
-                //go to login page
+                if (password != "" && password == passwordverify)
+                    if (name != "")
+                        if (username != "")
+                        {
+                            //connect and insert user information
+                            myConnection.Close();
+                            password = Hash_Password(password);
+                            Insert_UserInformation(name, username, password);
+                            //go to login page
+                            LoginPage page = new LoginPage();
+                            page.RegistrationSuccessful.Visibility = Visibility.Visible;
+                            page.Show();
+                            this.Hide();
+                        }
             }
             else
                 myConnection.Close();
@@ -158,7 +179,7 @@ namespace CodeLingo
         private void Insert_UserInformation(string name, string username, string password)
         {
             SqlConnection myConnection = Connect_to_Database();
-            
+
 
             //preventing SQL injection... hopefully
             var sql = "INSERT INTO CL_UserInformation (m_name, m_username, m_password)" +
@@ -191,6 +212,17 @@ namespace CodeLingo
             var hashedPassword = BCryptHelper.HashPassword(password, salt);
             Console.WriteLine(BCryptHelper.CheckPassword(password, hashedPassword));
             return hashedPassword;
+        }
+
+        /*******************************************
+        * Purpose: Will bring the user back to the 
+        *   login page
+        ********************************************/
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            LoginPage page = new LoginPage();
+            page.Show();
+            this.Hide();
         }
     }
 }

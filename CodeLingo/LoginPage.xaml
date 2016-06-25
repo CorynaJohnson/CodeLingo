@@ -8,7 +8,7 @@
         Title="MainWindow" Height="700" Width="1250" WindowState="Maximized">
     <Viewbox>
         <Grid>
-            <Grid Background="Black" Opacity=".5" Margin="10,0,-10,0"/>
+            <Grid Background="Black" Opacity=".5"/>
             <Label x:Name="textBox" Height="45" Margin="148,0,149,266" Content="Welcome to CodeLingo" Width="275" FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}"/>
             <Grid x:Name="Login" Margin="6,40,-6,10">
                 <Border
@@ -23,7 +23,8 @@
                         <Label x:Name="Password" HorizontalAlignment="Left" Height="30" Margin="196,83,0,0" Content="Password:" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
                         <PasswordBox x:Name="PasswordField" HorizontalAlignment="Left" Height="23" Margin="286,88,0,0" VerticalAlignment="Top" Width="150" BorderThickness="1" FontSize="16"/>
                         <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="286,143,0,0" VerticalAlignment="Top" Width="75" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="LoginButton_Click"/>
-                        <Button x:Name="RegisterButton" Content="Sign-Up" HorizontalAlignment="Left" Margin="493,-47,-16,0" VerticalAlignment="Top" Width="75" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="0.47,0.879" Click="RegistrationButton_Click"/>
+                        <Button x:Name="RegisterButton" Content="Sign-Up" HorizontalAlignment="Left" Margin="500,-49,-23,0" VerticalAlignment="Top" Width="75" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="0.47,0.879" Click="RegistrationButton_Click"/>
+                        <Label x:Name="RegistrationSuccessful" Content="You have registered! Please login." HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" Width="220" FontFamily="Bebas Kai" FontSize="16" Foreground="Green" Visibility="Hidden"/>
 
                     </Grid>
                 </Border>
