@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using BCrypt.Net;
 using System.Data.SqlClient;
 
 
@@ -28,50 +27,16 @@ namespace CodeLingo
         public RegistrationPage()
         {
             InitializeComponent();
-
-            string hash = Hash_Password("hello");
-            bool result = BCrypt.Net.BCrypt.Verify("hello", hash);
-            Console.WriteLine(hash);
-
-        //SqlConnection myConnection = Connect_to_Database();
-
-        //example read from sql server
-        //try
-        //{
-        //    SqlDataReader myReader = null;
-        //    SqlCommand myCommand = new SqlCommand("select * from CL_UserInformation",
-        //                                             myConnection);
-        //    myReader = myCommand.ExecuteReader();
-        //    while (myReader.Read())
-        //    {
-        //        Console.WriteLine(myReader["Column1"].ToString());
-        //        Console.WriteLine(myReader["Column2"].ToString());
-        //    }
-        //}
-        //catch (Exception e)
-        //{
-        //    Console.WriteLine(e.ToString());
-        //}
-
-
-
-        //close the connection to the database
-        //try
-        //{
-        //    myConnection.Close();
-        //}
-        //catch (Exception e)
-        //{
-        //    Console.WriteLine(e.ToString());
-        //}
-    }
+        }
+    
 
         /*******************************************
         * Purpose: Will connect to the database.
         ********************************************/
         private SqlConnection Connect_to_Database()
         {
-            SqlConnection myConnection = new SqlConnection("user id=CodeLingo_app;" +
+            SqlConnection myConnection = new SqlConnection("MultipleActiveResultSets=True;" +
+                                       "user id=CodeLingo_app;" +
                                        "password=password;" +
                                        "server=aura.students.cset.oit.edu;");
             //open the connection to the database
@@ -99,21 +64,19 @@ namespace CodeLingo
             string password = PasswordField.Password;
             string passwordverify = PasswordFieldVerify.Password;
 
-
             NameError.Visibility = Visibility.Hidden;
             UserNameError.Visibility = Visibility.Hidden;
             EmptyPasswordError.Visibility = Visibility.Hidden;
             PasswordError.Visibility = Visibility.Hidden;
-
+            
+            //
             SqlConnection myConnection = Connect_to_Database();
 
             SqlDataReader myReader = null;
             SqlCommand myCommand = new SqlCommand("select m_username from CL_UserInformation",
                                                      myConnection);
             myReader = myCommand.ExecuteReader();
-            //myReader.Read();
-            //if (myReader.Read())
-            //{
+
             while (myReader.Read())
             {
                 if (myReader["m_username"].ToString() != "")
@@ -124,11 +87,10 @@ namespace CodeLingo
                         break;
                     }
                 }
-                //myReader.NextResult();
             }
-            //}
+            //
 
-
+            
             //checking for blank or invalid fields
             if (name == "")
             {
@@ -138,10 +100,7 @@ namespace CodeLingo
             {
                 UserNameError.Visibility = Visibility.Visible;
             }
-            //if (myReader.HasRows && myReader["m_username"].ToString() == username)
-            //{
-            //    UserNameError.Visibility = Visibility.Visible;
-            //}
+
             if (password == "")
             {
                 if (password == passwordverify)
@@ -191,9 +150,9 @@ namespace CodeLingo
 
             using (var cmd = new SqlCommand(sql, myConnection))
             {
-                cmd.Parameters.Add("@name_val", name);
-                cmd.Parameters.Add("@username_val", username);
-                cmd.Parameters.Add("@password_val", password);
+                cmd.Parameters.AddWithValue("@name_val", name);
+                cmd.Parameters.AddWithValue("@username_val", username);
+                cmd.Parameters.AddWithValue("@password_val", password);
                 cmd.Connection = myConnection;
                 cmd.ExecuteNonQuery();
             }
@@ -213,7 +172,6 @@ namespace CodeLingo
         static private string Hash_Password(string password)
         {
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password, 12);
-
             return hashedPassword;
         }
 

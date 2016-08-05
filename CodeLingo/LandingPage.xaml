@@ -1,0 +1,19 @@
+﻿<Window x:Class="CodeLingo.LandingPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginPage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1250" WindowState="Maximized">
+    <Viewbox>
+
+        <Grid>
+            <Grid Background="Black" Opacity=".5" Margin="-179,0,-180,0" HorizontalAlignment="Left" Width="603"/>
+            <Label x:Name="LandingTitle" Height="45" Margin="-70,4,-70,262" Content="Welcome " Width="384" FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}" HorizontalContentAlignment="Center"/>
+            <Grid x:Name="LeftContent" Background="LightBlue" Margin="-150,49,150,15"/>
+            <Grid x:Name="RightContent" Background="LightBlue" Margin="150,49,-150,15"/>
+        </Grid>
+
+    </Viewbox>
+</Window>
