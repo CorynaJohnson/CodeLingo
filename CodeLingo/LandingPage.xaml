@@ -12,7 +12,10 @@
             <Grid Background="Black" Opacity=".5" Margin="-179,0,-180,0" HorizontalAlignment="Left" Width="603"/>
             <Label x:Name="LandingTitle" Height="45" Margin="-70,4,-70,262" Content="Welcome " Width="384" FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}" HorizontalContentAlignment="Center"/>
             <Grid x:Name="LeftContent" Background="LightBlue" Margin="-150,49,150,15"/>
-            <Grid x:Name="RightContent" Background="LightBlue" Margin="150,49,-150,15"/>
+            <Grid x:Name="RightContent" Background="LightBlue" Margin="150,49,-150,15">
+                <Label x:Name="Lesson" HorizontalAlignment="Left" Height="30" Margin="11,9,0,0" Content="Lesson 1" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
+                <Button x:Name="Lesson1Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="Lesson1Button_Click" Margin="79,15,0,0" Height="21"/>
+            </Grid>
         </Grid>
 
     </Viewbox>

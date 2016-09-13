@@ -15,21 +15,25 @@ using System.Windows.Shapes;
 namespace CodeLingo
 {
     /// <summary>
-    /// Interaction logic for LandingPage.xaml
+    /// Interaction logic for Lesson_IDE_Setup.xaml
     /// </summary>
-    public partial class LandingPage : Window
+    public partial class Lesson_IDE_Setup : Window
     {
-        public LandingPage(string username)
+        public Lesson_IDE_Setup()
         {
             InitializeComponent();
-            LandingTitle.Content = LandingTitle.Content + username + "!";
         }
 
-        private void Lesson1Button_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Lesson_IDE_Setup page = new Lesson_IDE_Setup();
+            LandingPage page = new LandingPage("Temp");
             page.Show();
             this.Hide();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

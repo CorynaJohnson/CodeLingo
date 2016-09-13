@@ -34,3 +34,5 @@ C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\De
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\BCrypt.Net.xml
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\LandingPage.g.cs
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\LandingPage.baml
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson_IDE_Setup.g.cs
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson_IDE_Setup.baml
