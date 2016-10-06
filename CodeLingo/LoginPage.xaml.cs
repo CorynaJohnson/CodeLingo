@@ -118,5 +118,10 @@ namespace CodeLingo
             return validuser;
         }
 
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                LoginButton_Click(null, null);
+        }
     }
 }

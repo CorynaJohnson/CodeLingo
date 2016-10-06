@@ -9,18 +9,8 @@
     <Viewbox>
 
         <Grid>
-            <Grid Background="Black" Opacity=".5" Margin="-31,-4,-30,-2">
+            <Grid Background="Black" Opacity=".5" Margin="-79,-4,-78,-2">
             </Grid>
-            <Label x:Name="textBox" Margin="148,0,149,266" Content="Lesson 1: Setup and basics" FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}"/>
-            <Label x:Name="Step_1" HorizontalAlignment="Left" Height="30" Margin="18,62,0,0" Content="1. Download Visual Studio at https://beta.visualstudio.com/vs/community/" VerticalAlignment="Top" Width="517" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
-            <Label x:Name="Step_1_Notice" HorizontalAlignment="Left" Height="30" Margin="33,81,0,0" Content="*Ask a parent for permission and help" VerticalAlignment="Top" Width="517" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="14" Background="{x:Null}"/>
-            <Label x:Name="Step_2" HorizontalAlignment="Left" Height="30" Margin="19,92,0,0" Content="2. create a project" VerticalAlignment="Top" Width="517" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
-            <Label x:Name="Step_3" Height="30" Margin="0,110,58,0" Content="3. Main" VerticalAlignment="Top" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" HorizontalAlignment="Right" Width="519"/>
-            <Label x:Name="Step_4" HorizontalAlignment="Right" Margin="0,128,61,156" Content="4. file types" Width="517" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
-            <Label x:Name="Step_5" HorizontalAlignment="Right" Margin="0,146,61,138" Content="5. libraries" Width="517" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
-            <Label x:Name="Step_6" HorizontalAlignment="Right" Margin="0,164,61,120" Content="6. adding files to projects" Width="517" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
-            <Label x:Name="Step_7" HorizontalAlignment="Right" Margin="1,182,60,102" Content="7. comments" Width="517" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
-            <Label x:Name="Hello_World" HorizontalAlignment="Right" Margin="0,200,394,84" Content="8. Tutorial - Hello World!" Width="185" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}"/>
             
             <Button x:Name="Continue_Button" Content="Continue" HorizontalAlignment="Left" Margin="302,262,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="button_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16"/>
             <Button x:Name="Back_Button" Content="Back" HorizontalAlignment="Left" Margin="190,262,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Back_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16"/>
