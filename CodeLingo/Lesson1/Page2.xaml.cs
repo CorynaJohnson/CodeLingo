@@ -10,30 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CodeLingo
+namespace CodeLingo.Lesson1
 {
     /// <summary>
-    /// Interaction logic for Lesson_IDE_Setup.xaml
+    /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class Lesson_IDE_Setup : Window
+    public partial class Page2 : Page
     {
-        public Lesson_IDE_Setup()
+        public Page2()
         {
             InitializeComponent();
-        }
-
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            LandingPage page = new LandingPage("Temp");
-            page.Show();
-            this.Hide();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
