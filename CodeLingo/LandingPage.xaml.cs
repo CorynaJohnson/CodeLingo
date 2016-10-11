@@ -28,6 +28,8 @@ namespace CodeLingo
 
         /******************************************************
         * Purpose: Get the pages in each of the lessons
+        * Usage: Folder must be in format: Lesson#
+        *        Pages must be in format: Page#
         ******************************************************/
         public static List<Page> GetPagesInLesson(int lesson)
         {

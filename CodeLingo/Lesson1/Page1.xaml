@@ -11,8 +11,11 @@
         <SolidColorBrush Color="White" Opacity="0.5"/>
     </Page.Background>
     <Grid>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="0,85,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="410,10,0,0" VerticalAlignment="Top" Width="38"/>
-
+        <Label x:Name="Step1" Content="1. Download Visual Studio          . Start This now" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,19,0,0"/>
+        <TextBlock FontFamily="Bebas Kai" FontSize="16" Margin="153,24,237,169"><Hyperlink NavigateUri="https://beta.visualstudio.com/vs/community/" RequestNavigate="Hyperlink_RequestNavigate">Here</Hyperlink></TextBlock>
+        <Label x:Name="Warning" Content="*Ask a parent for permission and help" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="12"/>
+        <Label x:Name="Step2" Content="2. Create A Project" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"/>
+        <Label x:Name="Subtitle" Content="This Lesson will cover the following: " HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <Label x:Name="Step3" Content="3. Main" HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"/>
     </Grid>
 </Page>
