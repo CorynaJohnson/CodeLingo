@@ -60,5 +60,15 @@ namespace CodeLingo
             page.Show();
             this.Hide();
         }
+
+        //private void lesson_button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Button button = sender as Button;
+        //    int button_id = Int32.Parse(button.Uid);
+        //    List<Page> pages = GetPagesInLesson(button_id);
+        //    LessonTemplate page = new LessonTemplate(button_id, pages);
+        //    page.Show();
+        //    this.Hide();
+        //}
     }
 }

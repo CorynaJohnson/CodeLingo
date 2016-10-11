@@ -39,4 +39,5 @@ C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\De
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.exe
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.pdb
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\CodeLingo.pdb
-C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\CodeLingo.csprojResolveAssemblyReference.cache
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page3.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page3.baml
