@@ -30,17 +30,22 @@ namespace CodeLingo
         ********************************************/
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ValidateUser())
-            {
-                System.Windows.Forms.MessageBox.Show("Login Successful");
-                
-                LandingPage page = new LandingPage(UserNameField.Text);
-                page.Show();
-                this.Hide();
-            }
+            LandingPage page = new LandingPage(UserNameField.Text);
+            page.Show();
+            this.Hide();
 
-            else
-                System.Windows.Forms.MessageBox.Show("Login failed");
+
+            //if (!ValidateUser())
+            //{
+            //    System.Windows.Forms.MessageBox.Show("Login Successful");
+
+            //    LandingPage page = new LandingPage(UserNameField.Text);
+            //    page.Show();
+            //    this.Hide();
+            //}
+
+            //else
+            //    System.Windows.Forms.MessageBox.Show("Login failed");
         }
 
         /*******************************************

@@ -39,6 +39,7 @@ namespace CodeLingo
             InitializeComponent();
             Title.Content = Title.Content + lesson_number.ToString();
             pages = lesson_pages;
+            current_page = 0;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -55,8 +56,10 @@ namespace CodeLingo
         private void Next_Button_Click(object sender, RoutedEventArgs e)
         {
             //if max page, continue to quiz/next lesson
-            
+            if (current_page == 0)
+                current_page++;
             //else, go to next available page
+        
         }
     }
 }

@@ -5,10 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CodeLingo.Lesson1"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page1">
-
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page1" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="White" Opacity="0.5"/>
+    </Page.Background>
     <Grid>
-        
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="0,85,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="410,10,0,0" VerticalAlignment="Top" Width="38"/>
+
     </Grid>
 </Page>

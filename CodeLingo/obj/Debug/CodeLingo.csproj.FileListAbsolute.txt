@@ -34,5 +34,9 @@ C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\De
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\bin\Debug\BCrypt.Net.xml
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\LandingPage.g.cs
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\LandingPage.baml
-C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson_IDE_Setup.g.cs
-C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson_IDE_Setup.baml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page1.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page2.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\LessonTemplate.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page1.baml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page2.baml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\LessonTemplate.baml

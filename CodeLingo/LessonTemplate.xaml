@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginPage"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1250" WindowState="Maximized" KeyDown="Window_KeyDown">
+        Title="MainWindow" Height="700" Width="1250" WindowState="Maximized">
     <Viewbox>
         <Grid Width="526" Height="314">
             <Grid Background="Black" Opacity=".5" Margin="-31,0,-30,0"/>
-            <Label x:Name="Title" Height="45" Margin="188,4,146,265" Content="Lesson " FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}"/>
+            <Label x:Name="Title" Height="45" Margin="218,4,116,265" Content="Lesson " FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}"/>
             <Button x:Name="Next_Button" Content="Next" HorizontalAlignment="Left" Margin="418,17,0,0" VerticalAlignment="Top" Width="75" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="0.47,0.879" Click="Next_Button_Click"/>
             <Button x:Name="Back_Button" Content="Back" HorizontalAlignment="Left" Margin="45,14,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Back_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16"/>
             <Grid x:Name="Login" Margin="6,40,-6,10">
