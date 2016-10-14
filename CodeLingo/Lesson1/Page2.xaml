@@ -11,7 +11,7 @@
     <Grid>
         <Label x:Name="Subtitle" Content="Downloading Visual Studio" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
         <TextBlock x:Name="Information" HorizontalAlignment="Left" Margin="6,31,0,0" TextWrapping="Wrap" 
-                   Text="Follow the download wizard instructions. You can choose to get as many extra features as you wish, but the default will be enough. When the download is complete, run Visual Studio and go to the next step." 
+                   Text="Follow the download wizard instructions. You can choose to get as many extra features as you wish, but the default C++ libraries will be enough. When the download is complete, run Visual Studio and go to the next step." 
                    VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16
                    " Width="360"/>
     </Grid>
