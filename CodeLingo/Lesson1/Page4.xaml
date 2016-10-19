@@ -6,12 +6,15 @@
       xmlns:local="clr-namespace:CodeLingo.Lesson1"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page4">
+      Title="Page4" Width="448" Height="208">
     <Page.Background>
         <SolidColorBrush Color="White" Opacity="0.5"/>
     </Page.Background>
 
     <Grid>
-        
+        <Label x:Name="Subtitle" Content="Next, we need to name it" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="HelloWorld" HorizontalAlignment="Left" TextWrapping="Wrap" Text="It is common for the first project a programmer makes in a new language is  the output of 'Hello World!'. We are going to name our Project and Solution after it." VerticalAlignment="Top" Margin="4,24,0,0" FontFamily="Bebas Kai" FontSize="20" Width="421"/>
+        <Image x:Name="image" Source="C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\naming.PNG" HorizontalAlignment="Left" Height="400" Margin="25,110,0,-302" VerticalAlignment="Top" Width="400"/>
+
     </Grid>
 </Page>

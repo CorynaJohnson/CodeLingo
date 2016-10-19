@@ -1,0 +1,15 @@
+﻿<Page x:Class="CodeLingo.Lesson1.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson1"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page5">
+
+    <Grid>
+        <Image x:Name="image" Source="C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\page5.PNG"  HorizontalAlignment="Left" Height="300" Margin="70,96,0,-188" VerticalAlignment="Top" Width="300"/>
+
+    </Grid>
+</Page>
