@@ -1,0 +1,19 @@
+﻿<Page x:Class="CodeLingo.Lesson1.Page6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson1"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page6" Width="448" Height="208">
+
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="The Editor" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Editor" HorizontalAlignment="Left" TextWrapping="Wrap" Text="You should see something like the image below, it doesn't have to look exactly the same. You should have folders off to one side of the screen." VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"/>
+        <Image x:Name="image" Source="C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\layout.PNG"  HorizontalAlignment="Left" Height="300" Margin="75,67,0,-159" VerticalAlignment="Top" Width="300"/>
+        <Label x:Name="label" Content="&lt;-- We're going to focus on this folder right now, Source." HorizontalAlignment="Left" Margin="125,145,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="12" Foreground="White" />
+
+    </Grid>
+</Page>

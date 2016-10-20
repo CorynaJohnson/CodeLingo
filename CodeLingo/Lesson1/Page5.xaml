@@ -6,9 +6,11 @@
       xmlns:local="clr-namespace:CodeLingo.Lesson1"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page5">
+      Title="Page5" Width="448" Height="208">
 
     <Grid>
+        <Label x:Name="Subtitle" Content="Specifics" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Specs" HorizontalAlignment="Left" TextWrapping="Wrap" Text="We will be using the following specifications below. Make sure it is an empty project and a console application. Once ready, click 'Finish'." VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"/>
         <Image x:Name="image" Source="C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\page5.PNG"  HorizontalAlignment="Left" Height="300" Margin="70,96,0,-188" VerticalAlignment="Top" Width="300"/>
 
     </Grid>
