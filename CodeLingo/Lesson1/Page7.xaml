@@ -12,7 +12,7 @@
         <Label x:Name="Subtitle" Content="Adding a file" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
         <TextBlock x:Name="File" HorizontalAlignment="Left" TextWrapping="Wrap" Text="We are going to add a '.cpp' file to the project. This is where we will write our code. Right click on  " VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"/>
         <Image x:Name="image" Source="C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\adding_file.PNG"  HorizontalAlignment="Left" Height="300" Margin="65,65,0,-157" VerticalAlignment="Top" Width="300"/>
-        <TextBlock x:Name="Explaination" HorizontalAlignment="Left" Margin="17,118,0,0" TextWrapping="Wrap" Text="We have 2 options, a .cpp and a .h file. A .cpp file is a 'C plus plus' file. A .h file is a 'header' file. We won't focus on the .h files, we just need the .cpp for now. Name the file 'main.cpp' and click 'Add'." VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"/>
+        <TextBlock x:Name="Explaination" HorizontalAlignment="Left" Margin="17,118,0,0" TextWrapping="Wrap" Text="We have 2 options, a '.cpp' and a '.h' file. The '.cpp' file is a 'C plus plus' file. The '.h' file is a 'header' file. We won't focus on the '.h' files, we just need the '.cpp' for now. Name the file 'main.cpp' and click 'Add'." VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"/>
         <Label x:Name="label" Content="Source Files -> Add -> New Item" HorizontalAlignment="Left" Margin="137,41,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Foreground="#FF040447"/>
 
     </Grid>
