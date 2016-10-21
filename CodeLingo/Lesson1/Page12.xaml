@@ -1,0 +1,20 @@
+﻿<Page x:Class="CodeLingo.Lesson1.Page12"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson1"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page12" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF999999" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Hello World!" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Explaination" TextWrapping="Wrap" Text="Now that we have our code, how do we get Visual Studio to display &quot;Hello World!&quot; to the screen? We are going to 'build' and then 'start' our code. To build we do:" VerticalAlignment="Top" Margin="4,26,10,0"  FontFamily="Bebas Kai" FontSize="16"/>
+        <Label x:Name="build" Content="Build -> Build Solution" HorizontalAlignment="Left" Margin="128,60,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Foreground="#FF040447"/>
+        <Image x:Name="image" Source="C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\build.PNG"  HorizontalAlignment="Left" Height="200" Margin="105,89,0,-81" VerticalAlignment="Top" Width="200"/>
+    </Grid>
+</Page>

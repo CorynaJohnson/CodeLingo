@@ -39,11 +39,27 @@ namespace CodeLingo
 
             foreach (Type type in asm.GetTypes())
             {
+                if (type.Namespace == name_space )
+                {
+                    string n = type.Namespace + "." + type.Name;
+                    if (type.Name.Length < 6)
+                    {
+                        Page p = asm.CreateInstance(n, true) as Page;
+                        pages.Add(p);
+                    }
+                }               
+            }
+            //this loop is here because Page10+ will be out of order because VS doesn't know that 9 < 10 -_-
+            foreach (Type type in asm.GetTypes())
+            {
                 if (type.Namespace == name_space)
                 {
                     string n = type.Namespace + "." + type.Name;
-                    Page p = asm.CreateInstance(n, true) as Page;
-                    pages.Add(p);
+                    if (type.Name.Length >= 6)
+                    {
+                        Page p = asm.CreateInstance(n, true) as Page;
+                        pages.Add(p);
+                    }
                 }
             }
             return pages;

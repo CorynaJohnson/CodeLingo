@@ -4,15 +4,12 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CodeLingo.Lesson1"
+      mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Page9" Width="448" Height="208">
 
-    <Page.Background>
-        <SolidColorBrush Color="Gray" Opacity="0.5"/>
-    </Page.Background>
-
     <Grid>
         <Label x:Name="Subtitle" Content="Include and using statements" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Include" HorizontalAlignment="Left" TextWrapping="Wrap" Text="When " VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"/>
+        <TextBlock x:Name="Include" HorizontalAlignment="Left" TextWrapping="Wrap" Text="The 'include' and 'using' statements let Visual Studio which libraries you'd like to use. These libraries can have very helpful tools for making a program. Math equations, displaying text, making buttons, these can all be added to a project by using the libraries for them. We need to use the iostream library because it allows us to output our text 'hello world' to the screen. the 'using' statement for letting Visual Studio know we want to output text to the screen." VerticalAlignment="Top" Margin="4,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"/>
     </Grid>
 </Page>
