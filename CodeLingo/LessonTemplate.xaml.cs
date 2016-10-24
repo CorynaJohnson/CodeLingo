@@ -50,7 +50,11 @@ namespace CodeLingo
             //else, continue to previous page
             else
                 current_page--;
-            
+            if (current_page != (pages.Count - 1))
+            {
+                Home_Button.Visibility = Visibility.Hidden;
+            }
+
         }
 
         private void Next_Button_Click(object sender, RoutedEventArgs e)
@@ -59,7 +63,15 @@ namespace CodeLingo
             if (current_page != (pages.Count-1))
                 current_page++;
             //else, go to next available page
-        
+            if(current_page == (pages.Count-1))
+            {
+                Home_Button.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Home_Button_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

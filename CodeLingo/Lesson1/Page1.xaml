@@ -9,10 +9,10 @@
       Title="Page1" Width="448" Height="208">
 
     <Grid>
+        <Label x:Name="Warning" Content="*Ask a parent for permission and help" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="12"/>
         <Label x:Name="Subtitle" Content="This Lesson will cover the following: " HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
         <Label x:Name="Step1" Content="1. Download Visual Studio          . Start This now." HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,19,0,0"/>
-        <TextBlock FontFamily="Bebas Kai" FontSize="16" Margin="153,24,268,169"><Hyperlink NavigateUri="https://beta.visualstudio.com/vs/community/" RequestNavigate="Hyperlink_RequestNavigate"><Run Text="Here"/></Hyperlink></TextBlock>
-        <Label x:Name="Warning" Content="*Ask a parent for permission and help" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="12"/>
+        <TextBlock FontFamily="Bebas Kai" FontSize="16" Margin="153,24,255,150"><Hyperlink NavigateUri="https://beta.visualstudio.com/vs/community/" RequestNavigate="Hyperlink_RequestNavigate" BaselineAlignment="Bottom"><Run Text="Here"/></Hyperlink></TextBlock>
         <Label x:Name="Step2" Content="2. Create A Project" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"/>
         <Label x:Name="Step3" Content="3. Main" HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"/>
         <Label x:Name="Step4" Content="4. File Types" HorizontalAlignment="Left" Margin="0,72,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"/>

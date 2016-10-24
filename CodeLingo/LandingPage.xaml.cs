@@ -20,10 +20,22 @@ namespace CodeLingo
     /// </summary>
     public partial class LandingPage : Window
     {
+        public string name;
+        public LandingPage()
+        {
+            InitializeComponent();
+            LandingTitle.Content = LandingTitle.Content + getUserName() + "!";
+        }
         public LandingPage(string username)
         {
             InitializeComponent();
+            name = username;
             LandingTitle.Content = LandingTitle.Content + username + "!";
+        }
+
+        public string getUserName()
+        {
+            return name;
         }
 
         /******************************************************
