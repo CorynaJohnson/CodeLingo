@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="Main" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Main" HorizontalAlignment="Left" TextWrapping="Wrap" Text="When Visual Studio runs the code, main is the function that is looked at. It will begin at the top and continue processing each line until it reaches a 'return 0;'. Inside the { }'s is where we will focus on writing. The next page will cover the #include and using lines at the top." VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"/>
+        <TextBlock x:Name="Main" HorizontalAlignment="Left" TextWrapping="Wrap" Text="When Visual Studio runs the code, main is where your program starts. It will begin at the top and continue processing each line until it reaches a 'return 0;'. Inside the { }'s is where we will focus on writing. The next page will cover the #include and using lines at the top." VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"/>
         <Image x:Name="image" Source="C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\CodeLingo\main.PNG"  HorizontalAlignment="Left" Height="250" Margin="100,104,0,-146" VerticalAlignment="Top" Width="250"/>
     </Grid>
 </Page>
