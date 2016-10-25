@@ -81,22 +81,27 @@ namespace CodeLingo
         /******************************************************
         * Purpose: Go to the first lesson
         ******************************************************/
-        private void Lesson1Button_Click(object sender, RoutedEventArgs e)
-        {
-            List<Page> pages = GetPagesInLesson(1);
-            LessonTemplate page = new LessonTemplate(1, pages);
-            page.Show();
-            this.Hide();
-        }
-
-        //private void lesson_button_Click(object sender, RoutedEventArgs e)
+        //private void Lesson1Button_Click(object sender, RoutedEventArgs e)
         //{
-        //    Button button = sender as Button;
-        //    int button_id = Int32.Parse(button.Uid);
-        //    List<Page> pages = GetPagesInLesson(button_id);
-        //    LessonTemplate page = new LessonTemplate(button_id, pages);
+        //    List<Page> pages = GetPagesInLesson(1);
+        //    LessonTemplate page = new LessonTemplate(1, pages);
         //    page.Show();
         //    this.Hide();
         //}
+
+
+        /******************************************************
+        * Purpose: Look at each button_Uid and go to the 
+        *           lesson that suits the number in Uid
+        ******************************************************/
+        private void lesson_button_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            int button_id = Int32.Parse(button.Uid);
+            List<Page> pages = GetPagesInLesson(button_id);
+            LessonTemplate page = new LessonTemplate(button_id, pages);
+            page.Show();
+            this.Hide();
+        }
     }
 }

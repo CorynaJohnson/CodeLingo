@@ -64,3 +64,5 @@ C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\De
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page13.baml
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page14.g.cs
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page14.baml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson2\Page1.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson2\Page1.baml

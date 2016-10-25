@@ -28,6 +28,10 @@ namespace CodeLingo
             set
             {
                 actual_page = value;
+                if (current_page == (pages.Count - 1))
+                {
+                    Home_Button.Visibility = Visibility.Visible;
+                }
                 LessonFrame.Navigate(pages[value]);
             }
         }
@@ -45,8 +49,12 @@ namespace CodeLingo
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             //if 0, go back to landing page
-            if (current_page == 0) ;
-                //nope
+            if (current_page == 0)
+            {
+                LandingPage page = new LandingPage();
+                page.Show();
+                this.Hide();
+            }
             //else, continue to previous page
             else
                 current_page--;
@@ -66,12 +74,15 @@ namespace CodeLingo
             if(current_page == (pages.Count-1))
             {
                 Home_Button.Visibility = Visibility.Visible;
+
             }
         }
 
         private void Home_Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            LandingPage page = new LandingPage();
+            page.Show();
+            this.Hide();
         }
     }
 }

@@ -14,7 +14,9 @@
             <Grid x:Name="LeftContent" Background="LightBlue" Margin="-150,49,150,15"/>
             <Grid x:Name="RightContent" Background="LightBlue" Margin="150,49,-150,15">
                 <Label x:Name="Lesson" HorizontalAlignment="Left" Height="30" Margin="11,9,0,0" Content="Lesson 1" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
-                <Button x:Name="Lesson1Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="Lesson1Button_Click" Margin="79,15,0,0" Height="21"/>
+                <Button x:Name="Lesson1Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,10,0,0" Height="21" Uid="1"/>
+                <Label x:Name="Lesson2" HorizontalAlignment="Left" Height="30" Margin="11,28,0,0" Content="Lesson 2" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
+                <Button x:Name="Lesson2Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,33,0,0" Height="21" Uid="2"/>
             </Grid>
         </Grid>
 
