@@ -35,7 +35,7 @@ namespace CodeLingo
             //this.Hide();
 
 
-            if (!ValidateUser())
+            if (ValidateUser())
             {
                 System.Windows.Forms.MessageBox.Show("Login Successful");
 
@@ -102,7 +102,7 @@ namespace CodeLingo
             {
                 SqlDataReader myReaderPass = null;
 
-                string myCommandPass = "select m_password from CL_UserInformation WHERE m_username = @username_val";
+                string myCommandPass = "select m_password from CL_User WHERE m_username = @username_val";
                 using (SqlCommand cmd = new SqlCommand(myCommandPass, myConnection))
                 {
                     cmd.Parameters.AddWithValue("@username_val", username);

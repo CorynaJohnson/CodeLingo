@@ -73,7 +73,7 @@ namespace CodeLingo
             SqlConnection myConnection = Connect_to_Database();
 
             SqlDataReader myReader = null;
-            SqlCommand myCommand = new SqlCommand("select m_username from CL_UserInformation",
+            SqlCommand myCommand = new SqlCommand("select m_username from CL_User",
                                                      myConnection);
             myReader = myCommand.ExecuteReader();
 
@@ -145,7 +145,7 @@ namespace CodeLingo
             SqlConnection myConnection = Connect_to_Database();
 
             //preventing SQL injection... hopefully
-            var sql = "INSERT INTO CL_UserInformation (m_name, m_username, m_password)" +
+            var sql = "INSERT INTO CL_User (m_name, m_username, m_password)" +
                 "VALUES (@name_val, @username_val, @password_val);";
 
             using (var cmd = new SqlCommand(sql, myConnection))
