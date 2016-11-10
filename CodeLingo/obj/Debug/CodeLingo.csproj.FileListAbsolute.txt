@@ -66,3 +66,7 @@ C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\De
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson1\Page14.baml
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson2\Page1.g.cs
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Lesson2\Page1.baml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\QuizTemplate.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\QuizTemplate.baml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Quiz2\Page1.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Quiz2\Page1.baml

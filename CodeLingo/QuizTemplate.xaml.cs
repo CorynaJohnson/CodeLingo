@@ -16,14 +16,16 @@ using System.Windows.Shapes;
 namespace CodeLingo
 {
     /// <summary>
-    /// Interaction logic for LessonTemplate.xaml
+    /// Interaction logic for QuizTemplate.xaml
     /// </summary>
-    public partial class LessonTemplate : Window
+    public partial class QuizTemplate : Window
     {
-        int lessonnumber = 0;
+        int quiznumber = 0;
         int actual_page = 0;
+        public static int current_score;
         string username;
-        int current_page {
+        int current_page
+        {
             get
             {
                 return actual_page;
@@ -35,19 +37,19 @@ namespace CodeLingo
                 {
                     Home_Button.Visibility = Visibility.Visible;
                 }
-                LessonFrame.Navigate(pages[value]);
+                QuizFrame.Navigate(pages[value]);
             }
         }
 
         List<Page> pages;
 
-        public LessonTemplate(int lesson_number, List<Page> lesson_pages, string name)
+        public QuizTemplate(int quiz_number, List<Page> quiz_pages, string name)
         {
             InitializeComponent();
             username = name;
-            lessonnumber = lesson_number;
-            Title.Content = Title.Content + lesson_number.ToString();
-            pages = lesson_pages;
+            quiznumber = quiz_number;
+            Title.Content = Title.Content + quiz_number.ToString();
+            pages = quiz_pages;
             current_page = 0;
         }
 
@@ -84,7 +86,7 @@ namespace CodeLingo
 
         private void Home_Button_Click(object sender, RoutedEventArgs e)
         {
-            LessonComplete();
+            //LessonComplete();
             LandingPage page = new LandingPage(username);
             page.Show();
             this.Hide();
@@ -113,7 +115,7 @@ namespace CodeLingo
             return myConnection;
         }
 
-        private void LessonComplete()
+        private void QuizComplete()
         {
             using (SqlConnection myConnection = Connect_to_Database())
             {
@@ -129,29 +131,20 @@ namespace CodeLingo
                     if (myReaderPass.Read())
                     {
                         int user_id = Int32.Parse(myReaderPass["userID"].ToString());
-                        
-                        myCommandPass = "SELECT * FROM CL_LessonsCompleted WHERE userID = @userid AND lessonID = @lessonnumber";
+
+                        myCommandPass = "SELECT * FROM CL_Scores WHERE userID = @userid AND quizID = @quiznumber";
                         using (SqlCommand command = new SqlCommand(myCommandPass, myConnection))
                         {
                             command.Parameters.AddWithValue("@userid", user_id);
-                            command.Parameters.AddWithValue("@lessonnumber", lessonnumber);
+                            command.Parameters.AddWithValue("@quiznumber", quiznumber);
                             myReaderPass = command.ExecuteReader();
 
-                            if (!myReaderPass.Read())
-                            {
-                                var sql = "INSERT INTO CL_LessonsCompleted (lessonID, userID) VALUES (@lessonnumber, @userid)";
-                                using (var cmd1 = new SqlCommand(sql, myConnection))
-                                {
-                                    cmd1.Parameters.AddWithValue("@userid", user_id);
-                                    cmd1.Parameters.AddWithValue("@lessonnumber", lessonnumber);
-                                    cmd1.Connection = myConnection;
-                                    cmd1.ExecuteNonQuery();
-                                }
-                            }
+                            if (myReaderPass.Read()) ;
+                                
                         }
                     }
+                    myConnection.Close();
                 }
-                myConnection.Close();
             }
         }
     }
