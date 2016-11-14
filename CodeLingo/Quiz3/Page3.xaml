@@ -11,6 +11,6 @@
     <Grid>
         <TextBlock x:Name="Subtitle" Text="3. A(n) _________ comment can span multiple lines." HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="5,0,0,180" FontWeight="Bold"/>
         <Label x:Name="answerfield" Content="Answer:" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="0,0,0,146" FontWeight="Bold"/>
-        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="23" Margin="70,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Answer_TextChanged"/>
+        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="23" Margin="70,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Answer_TextChanged" FontFamily="Bebas Kai" FontSize="18"/>
     </Grid>
 </Page>

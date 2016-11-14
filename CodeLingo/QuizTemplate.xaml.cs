@@ -137,7 +137,7 @@ namespace CodeLingo
                 SqlDataReader myReaderPass = null;
 
                 string myCommandPass = "SELECT userID FROM CL_User WHERE m_username = @username_val";
-                ReadFromDatabase("SELECT userID FROM CL_User WHERE m_username = @0", username);
+                //ReadFromDatabase("SELECT userID FROM CL_User WHERE m_username = @0", username);
 
                 using (SqlCommand cmd = new SqlCommand(myCommandPass, myConnection))
                 {

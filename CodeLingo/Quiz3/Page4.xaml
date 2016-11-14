@@ -7,9 +7,7 @@
       mc:Ignorable="d" 
        d:DesignHeight="300" d:DesignWidth="300"
       Title="Page4" Width="448" Height="208">
-    <Page.Background>
-        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
-    </Page.Background>
+
     <Grid>
         <Label x:Name="Subtitle" Content="4. Which type of comments affect code written?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
         <RadioButton x:Name="A" Content="A. Inline" HorizontalAlignment="Left" Margin="3,31,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
