@@ -151,6 +151,8 @@ namespace CodeLingo
         {
             if (IsLessonComplete(2))
                 Quiz2Button.Visibility = Visibility.Visible;
+            if (IsLessonComplete(3))
+                Quiz3Button.Visibility = Visibility.Visible;
         }
 
 

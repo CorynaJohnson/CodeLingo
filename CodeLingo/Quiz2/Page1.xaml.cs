@@ -30,9 +30,9 @@ namespace CodeLingo.Quiz2
         {
             RadioButton rb = sender as RadioButton;
             if (rb.Name == "True")
-                QuizTemplate.current_score = 100;
-            else
                 QuizTemplate.current_score = 0;
+            else
+                QuizTemplate.current_score = 100;
         }
     }
 }

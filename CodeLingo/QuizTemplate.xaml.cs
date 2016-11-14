@@ -47,7 +47,7 @@ namespace CodeLingo
         {
             InitializeComponent();
             username = name;
-            quiznumber = quiz_number;
+            quiznumber = quiz_number; //lesson that matches quizzes
             Title.Content = Title.Content + quiz_number.ToString();
             pages = quiz_pages;
             current_page = 0;
@@ -76,17 +76,32 @@ namespace CodeLingo
         {
             //go to next available page
             if (current_page != (pages.Count - 1))
+            {
+                if(current_score > 0)
+                    System.Windows.Forms.MessageBox.Show("Correct!");
+                else
+                    System.Windows.Forms.MessageBox.Show("Incorrect!");
+                QuizComplete();
                 current_page++;
+            }
             //if last page, show home button
             if (current_page == (pages.Count - 1))
             {
+                //if (current_score > 0)
+                //    System.Windows.Forms.MessageBox.Show("Correct!");
+                //else
+                //    System.Windows.Forms.MessageBox.Show("Incorrect!");
                 Home_Button.Visibility = Visibility.Visible;
             }
         }
 
         private void Home_Button_Click(object sender, RoutedEventArgs e)
         {
-            //LessonComplete();
+            if (current_score > 0)
+                System.Windows.Forms.MessageBox.Show("Correct!");
+            else
+                System.Windows.Forms.MessageBox.Show("Incorrect!");
+            QuizComplete();
             LandingPage page = new LandingPage(username);
             page.Show();
             this.Hide();
@@ -122,6 +137,8 @@ namespace CodeLingo
                 SqlDataReader myReaderPass = null;
 
                 string myCommandPass = "SELECT userID FROM CL_User WHERE m_username = @username_val";
+                ReadFromDatabase("SELECT userID FROM CL_User WHERE m_username = @0", username);
+
                 using (SqlCommand cmd = new SqlCommand(myCommandPass, myConnection))
                 {
                     cmd.Parameters.AddWithValue("@username_val", username);
@@ -132,20 +149,54 @@ namespace CodeLingo
                     {
                         int user_id = Int32.Parse(myReaderPass["userID"].ToString());
 
-                        myCommandPass = "SELECT * FROM CL_Scores WHERE userID = @userid AND quizID = @quiznumber";
-                        using (SqlCommand command = new SqlCommand(myCommandPass, myConnection))
-                        {
-                            command.Parameters.AddWithValue("@userid", user_id);
-                            command.Parameters.AddWithValue("@quiznumber", quiznumber);
-                            myReaderPass = command.ExecuteReader();
+                        string myCommand = "SELECT quizID FROM CL_Quizzes WHERE lessonID=@lessonnumber AND m_quiz_number=@quiznumber";
 
-                            if (myReaderPass.Read()) ;
-                                
+                        using (SqlCommand cmd1 = new SqlCommand(myCommand, myConnection))
+                        {
+                            cmd1.Parameters.AddWithValue("@quiznumber", (current_page + 1));
+                            cmd1.Parameters.AddWithValue("@lessonnumber", quiznumber);
+
+                            myReaderPass = cmd1.ExecuteReader();
+
+                            if (myReaderPass.Read())
+                            {
+                                int quizid = Int32.Parse(myReaderPass["quizID"].ToString());
+
+                                var sql = "INSERT INTO CL_Scores (userID, quizID, m_score)" +
+                                    "VALUES (@userid, @quiznumber, @score);";
+                                using (var command = new SqlCommand(sql, myConnection))
+                                {
+                                    command.Parameters.AddWithValue("@userid", user_id);
+                                    command.Parameters.AddWithValue("@quiznumber", quizid);
+                                    command.Parameters.AddWithValue("@score", current_score);
+                                    command.Connection = myConnection;
+                                    command.ExecuteNonQuery();
+                                }
+                            }
                         }
                     }
                     myConnection.Close();
                 }
             }
         }
+
+        private Dictionary<string, string> ReadFromDatabase(string command, params object[] args)
+        {
+            using (SqlConnection myConnection = Connect_to_Database())
+            {
+                SqlDataReader myReaderPass = null;
+                using (SqlCommand cmd = new SqlCommand(command, myConnection))
+                {
+                    for (int i = 0; i < args.Count(); i++)
+                        cmd.Parameters.AddWithValue("@" + i, args[i]);
+
+                    myReaderPass = cmd.ExecuteReader();
+                    Dictionary<string, string> dict = Enumerable.Range(0, myReaderPass.FieldCount).ToDictionary(i => myReaderPass.GetName(i), i => myReaderPass.GetValue(i).ToString()); 
+                    myConnection.Close();
+                    return dict;
+                }
+            }
+        }
+
     }
 }

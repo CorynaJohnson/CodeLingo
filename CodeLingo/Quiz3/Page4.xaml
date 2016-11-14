@@ -1,0 +1,21 @@
+﻿<Page x:Class="CodeLingo.Quiz3.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Quiz3"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page4" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+    <Grid>
+        <Label x:Name="Subtitle" Content="4. Which type of comments affect code written?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <RadioButton x:Name="A" Content="A. Inline" HorizontalAlignment="Left" Margin="3,31,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
+        <RadioButton x:Name="B" Content="B. Block" HorizontalAlignment="Left" Margin="3,47,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
+        <RadioButton x:Name="C" Content="C. Both Inline and Block" HorizontalAlignment="Left" Margin="3,64,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
+        <RadioButton x:Name="D" Content="D. Neither affect code" HorizontalAlignment="Left" Margin="3,81,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
+
+    </Grid>
+</Page>

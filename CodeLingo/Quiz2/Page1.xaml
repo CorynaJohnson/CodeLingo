@@ -7,15 +7,12 @@
       mc:Ignorable="d" 
        d:DesignHeight="300" d:DesignWidth="300"
       Title="Page1" Width="448" Height="208">
-    <Page.Background>
-        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
-    </Page.Background>
 
     <Grid>
         <Label x:Name="Subtitle" Content="1. Pseudocode is one of the 7 steps of debugging" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
         <RadioButton x:Name="True" Content="True" HorizontalAlignment="Left" Margin="3,32,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
         <RadioButton x:Name="False" Content="False" HorizontalAlignment="Left" Margin="3,48,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
         <!--<TextBlock x:Name="True" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="4,26,10,0"  FontFamily="Bebas Kai" FontSize="16"/>-->
-
+        <!--Checked = "HandleCheck"-->
     </Grid>
 </Page>
