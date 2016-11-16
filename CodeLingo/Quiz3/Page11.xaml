@@ -1,0 +1,26 @@
+﻿<Page x:Class="CodeLingo.Quiz3.Page11"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Quiz3"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page11" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+    <Canvas>
+        <Label x:Name="Subtitle" Content="11. What is the correct way to include namespace?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <Label x:Name="extra" Content="Drag the header and using statement to the boxes below" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20"  Canvas.Top="20" Canvas.Left="25"/>
+        <Label x:Name="Header" Content="Header" Canvas.Left="25" Canvas.Top="59" AllowDrop="True" Drop="Target_Drop" Width="190" Background="White" HorizontalContentAlignment="Center"/>
+        <Label x:Name="Using" Content="Using" Canvas.Left="25" Canvas.Top="90" AllowDrop="True" Drop="Target_Drop" Width="190" Background="White" HorizontalContentAlignment="Center"/>
+
+        <Label x:Name="op1" Content="#include &lt;iostream&gt;" Canvas.Left="245" Canvas.Top="88" MouseMove="Drag_MouseMove" Width="170" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op2" Content="#include &quot;iostream&quot;" Canvas.Left="245" Canvas.Top="54" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op3" Content="using std::namespace;" Canvas.Left="245" Canvas.Top="121" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op4" Content="using namespace std;" Canvas.Left="245" Canvas.Top="154" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+
+    </Canvas>
+
+</Page>

@@ -23,52 +23,15 @@ namespace CodeLingo.Quiz3
         public Page10()
         {
             InitializeComponent();
-            //AddHandler(FrameworkElement.MouseDownEvent, new MouseButtonEventHandler(Label_MouseDown), true);
-        }        
-
-        private void Drop1_Drop(object sender, DragEventArgs e)
-        {
-            Label lab = sender as Label;
-            if (lab != null)
-            {
-                if (e.Data.GetDataPresent(DataFormats.StringFormat))
-                {
-                    //get the data in the argument passed
-                    string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
-
-                    lab.Content = dataString;
-
-                }
-            }
-        }
-        bool isSelected = false;
-        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            isSelected = true;
-            UpdateUIElementPosistion(sender as Control);
         }
 
-        private void Label_MouseUp(object sender, MouseButtonEventArgs e)
+        private void HandleCheck(object sender, RoutedEventArgs e)
         {
-            isSelected = false;
-        }
-
-        
-        void UpdateUIElementPosistion(Control element)
-        {
-            System.Threading.Thread t1 = new System.Threading.Thread(new System.Threading.ThreadStart(delegate ()
-            {
-                while (isSelected)
-                {
-                    element.Dispatcher.Invoke(new Action(delegate ()
-                    {
-                        element.Margin = new Thickness(Mouse.GetPosition(null).X, Mouse.GetPosition(null).Y, 0, 0);
-                    }));
-                    
-                }
-                
-            }));
-            t1.Start();
+            RadioButton rb = sender as RadioButton;
+            if (rb.Name == "True")
+                QuizTemplate.current_score = 0;
+            else
+                QuizTemplate.current_score = 100;
         }
     }
 }

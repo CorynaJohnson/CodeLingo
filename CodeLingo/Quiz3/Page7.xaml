@@ -8,9 +8,6 @@
        d:DesignHeight="300" d:DesignWidth="300"
       Title="Page7" Width="448" Height="208">
 
-    <Page.Background>
-        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
-    </Page.Background>
     <Grid>
         <Label x:Name="Subtitle" Content="7. Is the following code correct?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
         <TextBlock x:Name="main" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="18" Margin="100,0,0,78" FontWeight="Bold" Foreground="DarkBlue" Height="106" Width="105" ><Run Text="int main ( )"/><LineBreak/><Run Text="("/><LineBreak/><Run Text="     return 0;"/><LineBreak/><Run Text=")"/></TextBlock>

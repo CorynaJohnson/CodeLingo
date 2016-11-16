@@ -50,8 +50,8 @@ namespace CodeLingo
             quiznumber = quiz_number; //lesson that matches quizzes
             Title.Content = Title.Content + quiz_number.ToString();
             pages = quiz_pages;
-            //current_page = 0;
-            current_page = 9;
+            current_page = 0;
+            //current_page = 10;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -78,8 +78,10 @@ namespace CodeLingo
             //go to next available page
             if (current_page != (pages.Count - 1))
             {
-                if(current_score > 0)
+                if(current_score == 100)
                     System.Windows.Forms.MessageBox.Show("Correct!");
+                else if (current_score > 0 && current_score < 100)
+                    System.Windows.Forms.MessageBox.Show("Partial Credit!");
                 else
                     System.Windows.Forms.MessageBox.Show("Incorrect!");
                 QuizComplete();

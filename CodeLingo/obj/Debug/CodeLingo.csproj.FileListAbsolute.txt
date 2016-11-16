@@ -98,3 +98,5 @@ C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\De
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Quiz3\Page9.baml
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Quiz3\Page10.g.cs
 C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Quiz3\Page10.baml
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Quiz3\Page11.g.cs
+C:\Users\Coryna\documents\visual studio 2015\Projects\CodeLingo\CodeLingo\obj\Debug\Quiz3\Page11.baml

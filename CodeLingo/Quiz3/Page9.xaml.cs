@@ -24,5 +24,13 @@ namespace CodeLingo.Quiz3
         {
             InitializeComponent();
         }
+        private void HandleCheck(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.Name == "True")
+                QuizTemplate.current_score = 0;
+            else
+                QuizTemplate.current_score = 100;
+        }
     }
 }
