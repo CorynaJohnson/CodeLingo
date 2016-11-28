@@ -50,8 +50,8 @@ namespace CodeLingo
             quiznumber = quiz_number; //lesson that matches quizzes
             Title.Content = Title.Content + quiz_number.ToString();
             pages = quiz_pages;
-            //current_page = 0;
-            current_page = 10;
+            current_page = 0;
+            //current_page = 10;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)

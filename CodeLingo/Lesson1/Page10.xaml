@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="displaying text" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Explaination" TextWrapping="Wrap" Text="In our .cpp file in our HelloWorld Project we have our include and using statement at the top of the file. 'cout' allows us to send text to the screen. The 'iostream' library contains the 'namespace std', which has a lot of different names in it, including 'cout'. Instead of 'using namespace std' we could say 'using std::cout' to be specific. For our learning purpose we will just use 'namespace std' to ensure we get all the names we need. So for us to display 'Hello World' out to the screen, we will do the following:" VerticalAlignment="Top" Margin="4,26,10,0"  FontFamily="Bebas Kai" FontSize="16"/>
+        <TextBlock x:Name="Explaination" TextWrapping="Wrap" Text="In our .cpp file in our HelloWorld Project we have our include and using statement at the top of the file. 'cout' allows us to send text to the screen. The 'iostream' library contains the 'namespace std', which has a lot of different names in it, including 'cout'. Instead of 'using namespace std' we could say 'using std::cout' to be specific. For our learning purpose we will just use 'namespace std' to ensure we get all the names we need. So for us to display 'Hello World' out to the screen, we will do the following:" VerticalAlignment="Top" Margin="5,26,9,0"  FontFamily="Bebas Kai" FontSize="16"/>
 
     </Grid>
 </Page>
