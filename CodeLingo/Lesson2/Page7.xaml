@@ -1,0 +1,19 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page7" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Requirement specification" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"><Run Text="To get an output, you need to process information, that information comes from an input. The following is a good way to do these stages:"/><LineBreak/><Run Text="&#x9;&#x9;Input(I) -&gt; Process(P) -&gt; Output(O)"/><LineBreak/><Run Text="These should not be done for the entire program at once, but instead for small sections of the program."/><LineBreak/><Run Text="Continuing from our previous example of your friend's birthday party, we want to refine and identify our requirements. We know:"/><LineBreak/><Run Text="*16th birthday&#x9;*Female Friend&#x9;*Small group"/><LineBreak/><Run Text="*Desserts and beverages are provided"/></TextBlock>
+
+    </Grid>
+</Page>

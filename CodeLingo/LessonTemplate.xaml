@@ -12,18 +12,17 @@
             <Label x:Name="Title" Height="45" Margin="218,4,116,265" Content="Lesson " FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}"/>
             <Button x:Name="Next_Button" Content="Next" HorizontalAlignment="Left" Margin="418,17,0,0" VerticalAlignment="Top" Width="75" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="0.47,0.879" Click="Next_Button_Click"/>
             <Button x:Name="Back_Button" Content="Back" HorizontalAlignment="Left" Margin="45,14,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Back_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16"/>
-            <Button x:Name="Home_Button" Content="Home" HorizontalAlignment="Left" Margin="233,270,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Home_Button_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16" Visibility="Hidden"/>
             <Grid x:Name="Login" Margin="6,40,-6,10">
                 <Border
             MinWidth="150"
-            Height="208"
             Background="LightBlue"
             BorderThickness="1" 
-            CornerRadius="0,80,0,80" Margin="39,10,39,43" >
-                    <Frame x:Name="LessonFrame" Content="" NavigationUIVisibility="Hidden"/>
+            CornerRadius="0,80,0,80" Margin="39,12,39,10" >
+                    <Frame x:Name="LessonFrame" Content="" NavigationUIVisibility="Hidden" />
 
                 </Border>
             </Grid>
+            <Button x:Name="Home_Button" Content="Home" HorizontalAlignment="Left" Margin="418,17,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Home_Button_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16" Visibility="Hidden"/>
         </Grid>
     </Viewbox>
 </Window>

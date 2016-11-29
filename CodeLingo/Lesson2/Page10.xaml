@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page10"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page10" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Design" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"><Run Text="The design step is when we are going to develop an algorithm for a small part of your program or problem. an Algorithm is a finite set of instructions that lead to a solution. In this lesson we will use pseudocode, which we will get more in depth with later in this lesson. Pseudocode is a written list of the individual steps needed to solve the problem, without using a programming language like c++. The pseudocode should be a list of all the necessary details to clearly outline the solution that we want."/><LineBreak/><Run/></TextBlock>
+    </Grid>
+</Page>

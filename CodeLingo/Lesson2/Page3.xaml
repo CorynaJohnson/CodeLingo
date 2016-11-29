@@ -7,13 +7,10 @@
       mc:Ignorable="d" 
        d:DesignHeight="300" d:DesignWidth="300"
       Title="Page3" Width="448" Height="208">
-    <Page.Background>
-        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
-    </Page.Background>
 
     <Grid>
         <Label x:Name="Subtitle" Content="Problem Solving" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"><Run Text="A program is a specific set of structured (or ordered) operations to be performed by a computer. "/><LineBreak/><Run Text="Think of a program like a recipe for baking a cake. we need to follow the recipe in order, or we wouldn't end up with a proper cake. We shouldn't add in egg after we've already put the cake in the oven."/><LineBreak/><Run Text="Just like us, the computer needs to know the order to create the correct program we want."/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"><Run Text="It is important to think about the problem you are trying to solve before programming. Just like if you were going to a friend's house, you'd want to know how to get there before leaving."/><LineBreak/><Run Text="Having an overall strategy to solve the problem will help guide you while you are creating a program. This will lead to a more accurate, efficient, and maintainable program."/><LineBreak/><Run Text="The guideline we will use is the &quot;7 steps of Development&quot;. "/><LineBreak/><Run/></TextBlock>
 
     </Grid>
 </Page>

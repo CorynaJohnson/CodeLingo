@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page21"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page21" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Algorithm - flowchart" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Height="184" Width="434"><Run Text="As an example to demonstrate flowcharts, let's say we want to ask (prompt) a person to enter a test score. Then we want to print out two different messages to the person. If the person gets above a 90, then we want to say &quot;Excellent Job&quot;. If they get less we want to say &quot;Try a little harder&quot;. "/><LineBreak/><Run Text="Following our steps, first we need to define our problem, which is printing out a message based on input. The second step is to identify what our inputs and outputs will be. Third is to develop an algorithm. A flowchart is one way to represent this problem, then we will do the same problem using pseudocode. "/></TextBlock>
+    </Grid>
+</Page>

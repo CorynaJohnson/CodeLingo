@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page6" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Requirement specification" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"><Run Text="Here, we want to remove all unclear or not well-defined statements from the problem definition. After, we need to determine what inputs and outputs we will need. For outputs, we need to decide what outputs or results are required for out program. For inputs, we need to know the source that we are getting the input from. This could be from a file, keyboard, or mouse. "/><LineBreak/><LineBreak/><Run/></TextBlock>
+    </Grid>
+</Page>

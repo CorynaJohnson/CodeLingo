@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page24"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page24" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Algorithm - pseudocode" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Height="184" Width="434"><Run Text="Display Prompt &quot;Enter Score: &quot;"/><LineBreak/><Run Text="Read Score from keyboard"/><LineBreak/><Run Text="If Score &gt; 90"/><LineBreak/><Run Text="&#x9;Display &quot;Excellent job&quot;"/><LineBreak/><Run Text="Else"/><LineBreak/><Run Text="&#x9;Display &quot;Try a little harder&quot;"/></TextBlock>
+    </Grid>
+</Page>

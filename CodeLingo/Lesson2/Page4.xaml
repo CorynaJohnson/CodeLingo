@@ -5,10 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CodeLingo.Lesson2"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page4">
+        d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page4" Width="448" Height="208">
+
 
     <Grid>
-        
+        <Label x:Name="Subtitle" Content="7 steps of development" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="3,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"><Run Text="1. Define the problem"/><LineBreak/><Run Text="2. Requirement specification"/><LineBreak/><Run Text="3. design"/><LineBreak/><Run Text="4. implementation"/><LineBreak/><Run Text="5. testing and verification"/><LineBreak/><Run Text="6. Repeat steps 3-5"/><LineBreak/><Run Text="7. Maintenance"/><LineBreak/><Run Text="We will go over these more in depth."/><LineBreak/><Run/></TextBlock>
+
     </Grid>
 </Page>

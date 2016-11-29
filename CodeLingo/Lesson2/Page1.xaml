@@ -11,7 +11,8 @@
     <Grid>
         <Label x:Name="Subtitle" Content="This Lesson will cover the following: " HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
         <Label x:Name="Step1" Content="1. Definition of a program" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,19,0,0"/>
-        <Label x:Name="Step2" Content="2. The 7 steps of debugging" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,37,0,0"/>
-        <Label x:Name="Step3" Content="3. Pseudocode" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,53,0,0"/>
-          </Grid>
+        <Label x:Name="Step2" Content="2. The 7 steps of Development" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,37,0,0"/>
+        <Label x:Name="Step3" Content="3. Algorithm - Flowchart" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,53,0,0"/>
+        <Label x:Name="Step3_Copy" Content="4. Algorithm - pseudocode" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,70,0,0"/>
+    </Grid>
 </Page>

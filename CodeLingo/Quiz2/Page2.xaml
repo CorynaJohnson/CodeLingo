@@ -9,7 +9,7 @@
       Title="Page2" Width="448" Height="208">
 
     <Grid>
-        <TextBlock x:Name="Subtitle" Text="2. Which of the following is not one of the 7 steps of debugging?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="5,0,0,160" FontWeight="Bold" TextWrapping="Wrap"/>
+        <TextBlock x:Name="Subtitle" Text="2. Which of the following is not one of the 7 steps of development?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="5,0,0,160" FontWeight="Bold" TextWrapping="Wrap"/>
         <RadioButton x:Name="A" Content="A. Maintenance" HorizontalAlignment="Left" Margin="3,52,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
         <RadioButton x:Name="B" Content="B. Define the problem" HorizontalAlignment="Left" Margin="3,68,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
         <RadioButton x:Name="C" Content="C. Implementation" HorizontalAlignment="Left" Margin="3,85,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>

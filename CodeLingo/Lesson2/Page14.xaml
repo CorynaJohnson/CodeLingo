@@ -1,0 +1,19 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page14"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page14" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Implementation" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Height="184" Width="434"><Run Text="Now it is time to write the source code based on the algorithm (pseudocode) developed in the design step. Writing parts of the pseudocode can be less intimidating and then you can add the parts together. "/><LineBreak/><Run Text="It is very important to remember to write the pseudocode before trying to implement the code. Doing the pseudocode first will save time and will become more helpful as the problems get bigger."/><LineBreak/><Run Text="For our birthday example, the friend has just finished following the recipe and bakes the cake as directed. This process should be followed to make the toppings for the cake."/></TextBlock>
+
+    </Grid>
+</Page>

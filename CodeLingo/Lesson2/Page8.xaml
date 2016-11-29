@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page8"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page8" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Requirement specification" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16"><Run Text="We need to specify even more clearly now. We need to know how many people are attending so we can gather an appropriate amount of food and drinks. Next is having your friend decide on the type of cake they want, which is chocolate cream cake made with grandma's recipe. Next, it is important to decide the date and time of the event. Now that the requirements have been specified more clearly, we have the following information: "/><LineBreak/><Run Text="*16th birthday&#x9;*Female Friend&#x9;*14 guests&#x9;&#x9;"/><LineBreak/><Run Text="*Chocolate cream cake&#x9;&#x9;*Fruit punch"/><LineBreak/><Run Text="*Party if Friday, Sept 15th at 6pm&#x9;&#x9;*Jamie is hosting at her house"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+    </Grid>
+</Page>

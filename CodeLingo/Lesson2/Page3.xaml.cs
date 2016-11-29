@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace CodeLingo.Lesson2
 {
     /// <summary>
-    /// Interaction logic for Page3.xaml
+    /// Interaction logic for Page4.xaml
     /// </summary>
     public partial class Page3 : Page
     {

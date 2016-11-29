@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page13"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page13" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Design" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Height="184" Width="434"><Run Text="The pseudocode should be clear and concise because you may not be the one to code the project. Your friend might want to help code and they need to be able to understand your pseudocode. "/><LineBreak/><Run Text="Just like in our birthday party example, grandma already gives us the recipe which is our algorithm (pseudocode). if we are called away to do a chore, a different friend could pick up where we left off because of the detailed pseudocode. This ensures that the cake will still be made before the birthday party."/></TextBlock>
+    </Grid>
+</Page>

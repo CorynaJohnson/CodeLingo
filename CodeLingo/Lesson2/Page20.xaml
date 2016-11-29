@@ -1,0 +1,23 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page20"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page20" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Algorithm - flowchart" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Height="184" Width="434"><Run Text="Termination - marks the start or the end of the flowchart"/><LineBreak/><Run Text="process - denotes any activity associated with manipulating the data"/><LineBreak/><Run Text="decision - illustrates the flow of the solution based on either a true or a "/><LineBreak/><Run Text="                   false condition"/><LineBreak/><Run Text="Input/Output (I/O) - shows reading data or displaying results"/><LineBreak/><Run Text="The arrow illustrates the flow of control"/><LineBreak/><Run/></TextBlock>
+        <Image x:Name="___CodeLingo_component_Image3_png" Margin="330,130,10,10" Source="/CodeLingo;component/Image3.png" Stretch="Fill"/>
+        <Image x:Name="___CodeLingo_component_Image4_png" Margin="192,145,118,10" Source="/CodeLingo;component/Image4.png" Stretch="Fill"/>
+        <Image x:Name="___CodeLingo_component_Image5_png" Margin="90,158,256,10" Source="/CodeLingo;component/Image5.png" Stretch="Fill"/>
+        <Image x:Name="___CodeLingo_component_Image6_png" Margin="0,158,358,10" Source="/CodeLingo;component/Image6.png" Stretch="Fill"/>
+        <Image x:Name="___CodeLingo_component_Image7_png" Margin="0,145,256,50" Source="/CodeLingo;component/Image7.png" Stretch="Fill"/>
+    </Grid>
+</Page>

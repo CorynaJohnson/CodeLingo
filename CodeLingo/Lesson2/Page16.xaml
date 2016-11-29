@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Lesson2.Page16"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page16" Width="448" Height="208">
+    <Page.Background>
+        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Testing and verification" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Height="184" Width="434"><Run Text="If your algorithm has an error, do not go back to step 4 and try to implement a different piece to fix the error. This is called &quot;hacking programming&quot;, which is just a trial and error method of programming. This leads to a program that is difficult to maintain and to debug. this results in a large waste of time. "/><LineBreak/><Run Text="For our example, once the cake is done baking and has cooled, we can sample the crumbs from the pan to ensure that it is the perfect cake. "/></TextBlock>
+    </Grid>
+</Page>
