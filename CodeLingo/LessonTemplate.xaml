@@ -17,8 +17,8 @@
             MinWidth="150"
             Background="LightBlue"
             BorderThickness="1" 
-            CornerRadius="0,80,0,80" Margin="39,12,39,10" >
-                    <Frame x:Name="LessonFrame" Content="" NavigationUIVisibility="Hidden" />
+            CornerRadius="0,40,0,40" Margin="39,10" >
+                    <Frame x:Name="LessonFrame" Content="" NavigationUIVisibility="Hidden" Margin="1,-9,-1,9" />
 
                 </Border>
             </Grid>

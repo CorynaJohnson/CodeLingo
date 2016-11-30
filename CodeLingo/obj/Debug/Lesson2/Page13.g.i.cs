@@ -41,7 +41,7 @@ namespace CodeLingo.Lesson2 {
     public partial class Page13 : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
         
-        #line 15 "..\..\..\Lesson2\Page13.xaml"
+        #line 13 "..\..\..\Lesson2\Page13.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Subtitle;
         
@@ -49,7 +49,7 @@ namespace CodeLingo.Lesson2 {
         #line hidden
         
         
-        #line 16 "..\..\..\Lesson2\Page13.xaml"
+        #line 14 "..\..\..\Lesson2\Page13.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock content;
         

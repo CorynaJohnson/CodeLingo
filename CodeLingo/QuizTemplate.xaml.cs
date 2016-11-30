@@ -100,8 +100,10 @@ namespace CodeLingo
 
         private void Home_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (current_score > 0)
+            if (current_score == 100)
                 System.Windows.Forms.MessageBox.Show("Correct!");
+            else if (current_score > 0 && current_score < 100)
+                System.Windows.Forms.MessageBox.Show("Partial Credit!");
             else
                 System.Windows.Forms.MessageBox.Show("Incorrect!");
             QuizComplete();

@@ -16,7 +16,7 @@
             Height="208"
             Background="LightBlue"
             BorderThickness="1" 
-            CornerRadius="0,80,0,80" Margin="39,10,39,43" >
+            CornerRadius="0,60,0,60" Margin="39,10,39,43" >
                     <Grid Margin="-70, 10, 20,20">
                         <Label x:Name="UserName" HorizontalAlignment="Left" Height="30" Margin="196,53,0,0" Content="UserName:" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
                         <TextBox x:Name="UserNameField" HorizontalAlignment="Left" Height="23" Margin="286,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" BorderThickness="1" FontSize="16"/>

@@ -16,11 +16,10 @@
             <Grid x:Name="Login" Margin="6,40,-6,10">
                 <Border
             MinWidth="150"
-            Height="208"
             Background="LightBlue"
             BorderThickness="1" 
-            CornerRadius="0,80,0,80" Margin="39,10,39,43" >
-                    <Frame x:Name="QuizFrame" Content="" NavigationUIVisibility="Hidden"/>
+            CornerRadius="0,40,0,40" Margin="39,10" >
+                    <Frame x:Name="QuizFrame" Content="" NavigationUIVisibility="Hidden" Margin="-1,-9,1,9"/>
 
                 </Border>
             </Grid>

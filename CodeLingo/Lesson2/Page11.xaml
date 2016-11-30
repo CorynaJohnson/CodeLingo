@@ -7,9 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Page11" Width="448" Height="208">
-    <Page.Background>
-        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
-    </Page.Background>
+
 
     <Grid>
         <Label x:Name="Subtitle" Content="Design" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
