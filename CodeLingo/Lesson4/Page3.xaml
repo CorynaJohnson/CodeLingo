@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson4.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson4"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page3" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Character Escapes" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="A control character is an escape sequence that doesn't display anything but controls the position of the text displayed. Some of the commonly used ones are:"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><LineBreak/><Run Text="Next, we'll go over some examples."/></TextBlock>
+        <TextBlock x:Name="content_Copy" HorizontalAlignment="Left" Margin="4,85,0,-11" FontFamily="Courier New" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12" Height="134" Width="434"><Run Text="\n&#x9;new line"/><LineBreak/><Run Text="\t&#x9;tab"/><LineBreak/><Run Text="\&quot;&#x9;double quote"/><LineBreak/><Run Text="\'&#x9;single quote"/><LineBreak/><Run Text="\\&#x9;backslash"/><LineBreak/><Run Text="\0&#x9;null character"/></TextBlock>
+
+    </Grid>
+</Page>

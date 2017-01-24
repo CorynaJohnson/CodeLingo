@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson3.Page6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson3"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page6" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Comments" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="Inline comment example:"/><LineBreak/><Run Text="//this is an inline comment"/><LineBreak/><Run Text="Remember, inline comments are only good for one line, while block comments can span multiple lines."/><LineBreak/><Run Text="Block Comment example:"/><LineBreak/><Run Text="/* this is"/><LineBreak/><Run Text="     a"/><LineBreak/><Run Text="     block comment */"/></TextBlock>
+
+    </Grid>
+</Page>

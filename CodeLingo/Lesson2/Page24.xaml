@@ -11,6 +11,6 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="Algorithm - pseudocode" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
-        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Height="184" Width="434"><Run Text="Display Prompt &quot;Enter Score: &quot;"/><LineBreak/><Run Text="Read Score from keyboard"/><LineBreak/><Run Text="If Score &gt; 90"/><LineBreak/><Run Text="&#x9;Display &quot;Excellent job&quot;"/><LineBreak/><Run Text="Else"/><LineBreak/><Run Text="&#x9;Display &quot;Try a little harder&quot;"/></TextBlock>
+        <TextBlock x:Name="content" HorizontalAlignment="Left" Margin="4,24,0,0" TextWrapping="Wrap" FontFamily="Courier New" VerticalAlignment="Top" FontSize="16" Height="184" Width="434"><Run Text="Display Prompt &quot;Enter Score: &quot;"/><LineBreak/><Run Text="Read Score from keyboard"/><LineBreak/><Run Text="If Score &gt; 90"/><LineBreak/><Run Text="&#x9;Display &quot;Excellent job&quot;"/><LineBreak/><Run Text="Else"/><LineBreak/><Run Text="&#x9;Display &quot;Try a little harder&quot;"/></TextBlock>
     </Grid>
 </Page>

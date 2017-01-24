@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="9. Is the following code correct?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
-        <Label x:Name="main" Content="#include &quot;iostream&quot;" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="18" Margin="80,0,0,154" FontWeight="Bold" Foreground="DarkBlue"/>
+        <Label x:Name="main" Content="#include &quot;iostream&quot;" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Courier New" FontSize="18" Margin="80,0,0,154" FontWeight="Bold" Foreground="DarkBlue"/>
         <RadioButton x:Name="True" Content="Yes" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
         <RadioButton x:Name="False" Content="No" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
     </Grid>

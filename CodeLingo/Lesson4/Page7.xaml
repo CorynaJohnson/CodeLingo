@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson4.Page7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson4"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page7" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Variable Declarations" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="Basic variable declaration:"/><LineBreak/><LineBreak/><Run Text="Multiple variables:"/><LineBreak/><Run/><LineBreak/><Run Text="You can declare variables anywhere in your code as long as it is declared before it is used. "/><LineBreak/><Run Text="It is recommended to put your variables at the top of main, right after the first curly brace ( { )."/></TextBlock>
+        <TextBlock x:Name="content_Copy" HorizontalAlignment="Left" Margin="4,50,0,0" FontFamily="Courier New" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12" Height="134" Width="434"><Run Text="int salary; //notice the semicolon  "/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="int age, salary, shoe_size;"/></TextBlock>
+
+    </Grid>
+</Page>

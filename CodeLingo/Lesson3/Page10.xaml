@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson3.Page10"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson3"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page10" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Include Statements" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="The first example searches for the header file in the include directory, which is where Visual Studio was downloaded to. "/><LineBreak/><Run Text="The second will be talked about more in depth later in this series. This form looks for the header file in the same directory that the .cpp file was created in. "/><LineBreak/><Run Text="We will view some examples."/><LineBreak/><Run Text=""/></TextBlock>
+
+    </Grid>
+</Page>

@@ -7,9 +7,7 @@
       mc:Ignorable="d" 
        d:DesignHeight="300" d:DesignWidth="300"
       Title="Page5" Width="448" Height="208">
-    <Page.Background>
-        <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
-    </Page.Background>
+
     <Grid>
         <TextBlock x:Name="Subtitle" Text="5. What form of algorithm representation is English-like?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="5,0,0,180" FontWeight="Bold"/>
         <Label x:Name="answerfield" Content="Answer:" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="0,0,0,146" FontWeight="Bold"/>

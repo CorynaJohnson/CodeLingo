@@ -7,9 +7,9 @@
       mc:Ignorable="d" 
        d:DesignHeight="300" d:DesignWidth="300"
       Title="Page12" Width="448" Height="208">
-    <Page.Background>
+    <!--<Page.Background>
         <SolidColorBrush Color="#FF7A7A7A" Opacity="0.75"/>
-    </Page.Background>
+    </Page.Background>-->
     <Canvas>
         <Label x:Name="Subtitle" Content="6. Put the 7 steps of development in order" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
         <Label x:Name="extra" Content="Drag the gray boxes onto the white boxes" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="18"  Canvas.Top="15" Canvas.Left="17" />
