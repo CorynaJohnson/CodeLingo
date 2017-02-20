@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson5.Page7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson5"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page7" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="cin" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="The cin statement reads data from the input stream. This is by default the keyboard and then it stores that value into a variable used in the cin statement. let's see an example. "/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="Notice that we are using &gt;&gt; for cin. This is called the extraction operator. "/></TextBlock>
+        <TextBlock x:Name="content_Copy" HorizontalAlignment="Left" Margin="4,32,0,0" FontFamily="Courier New" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12" Height="164" Width="444"><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" Text=""/><LineBreak/><Run FontWeight="Bold" Text="int score = 0;"/><LineBreak/><Run FontWeight="Bold" Text="cin &gt;&gt; score;"/></TextBlock>
+
+    </Grid>
+</Page>

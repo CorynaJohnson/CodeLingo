@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="Variable Declarations - initial value" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,32,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="What if we don't know what value we want to initialize our variable to? Should we just leave it undefined?"/><LineBreak/><Run/><LineBreak/><Run Text="No, we can always initialize our variables to null, which is not the same as undefined or unknown. numeric variables can get initialized to zero and character variables can be initialized to the null character (\0)."/><LineBreak/><Run/><LineBreak/><Run Text="Let's talk about the different data types."/></TextBlock>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="What if we don't know what value we want to initialize our variable to? Should we just leave it undefined?"/><LineBreak/><Run/><LineBreak/><Run Text="No, we can always initialize our variables to null, which is not the same as undefined or unknown. numeric variables can get initialized to zero and character variables can be initialized to the null character (\0)."/><LineBreak/><Run/><LineBreak/><Run Text="Let's talk about the different data types."/></TextBlock>
 
     </Grid>
 </Page>

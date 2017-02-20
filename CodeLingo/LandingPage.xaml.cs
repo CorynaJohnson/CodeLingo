@@ -22,6 +22,7 @@ namespace CodeLingo
     public partial class LandingPage : Window
     {
         public string name;
+        private float score_total;
         public LandingPage()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace CodeLingo
             name = username;
             LandingTitle.Content = LandingTitle.Content + username + "!";
             ViewableQuizzes();
+            ViewableScores();
         }
 
         public string getUserName()
@@ -153,8 +155,35 @@ namespace CodeLingo
                 Quiz2Button.Visibility = Visibility.Visible;
             if (IsLessonComplete(3))
                 Quiz3Button.Visibility = Visibility.Visible;
+            if (IsLessonComplete(4))
+                Quiz4Button.Visibility = Visibility.Visible;
+            if (IsLessonComplete(5))
+                Quiz5Button.Visibility = Visibility.Visible;
         }
 
+        private void ViewableScores()
+        {
+            if (IsScored(2))
+            {
+                Quiz2Score.Content = score_total + "%";
+                Quiz2Score.Visibility = Visibility.Visible;
+            }
+            if (IsScored(3))
+            {
+                Quiz3Score.Content = score_total + "%";
+                Quiz3Score.Visibility = Visibility.Visible;
+            }
+            if (IsScored(4))
+            {
+                Quiz4Score.Content = score_total + "%";
+                Quiz4Score.Visibility = Visibility.Visible;
+            }
+            if (IsScored(5))
+            {
+                Quiz5Score.Content = score_total + "%";
+                Quiz5Score.Visibility = Visibility.Visible;
+            }
+        }
 
         private SqlConnection Connect_to_Database()
         {
@@ -211,6 +240,64 @@ namespace CodeLingo
                 myConnection.Close();
             }
             return isComplete;
+        }
+
+        private bool IsScored(int quiznumber)
+        {
+            bool isScored = false;
+            using (SqlConnection myConnection = Connect_to_Database())
+            {
+                SqlDataReader myReaderPass = null;
+
+                string myCommandPass = "SELECT userID FROM CL_User WHERE m_username=@username_val";
+                using (SqlCommand cmd = new SqlCommand(myCommandPass, myConnection))
+                {
+                    cmd.Parameters.AddWithValue("@username_val", name);
+
+                    myReaderPass = cmd.ExecuteReader();
+
+                    if (myReaderPass.Read())
+                    {
+                        int user_id = Int32.Parse(myReaderPass["userID"].ToString());
+
+                        myCommandPass = "SELECT m_score FROM CL_Scores WHERE userID=@userid AND quizID IN" +
+                            " (SELECT quizID FROM CL_Quizzes WHERE lessonID=@lessonnumber)";
+
+
+                        using (SqlCommand command = new SqlCommand(myCommandPass, myConnection))
+                        {
+                            command.Parameters.AddWithValue("@userid", user_id);
+                            command.Parameters.AddWithValue("@lessonnumber", quiznumber);
+                            myReaderPass = command.ExecuteReader();
+
+                            List<int> scores = new List<int>();
+                            if (myReaderPass.HasRows)
+                                isScored = true;
+                            else
+                                isScored = false;
+                            while (myReaderPass.HasRows)
+                            {
+                                while (myReaderPass.Read())
+                                    //scores[i] = Int32.Parse(myReaderPass["m_score"].ToString());
+                                    scores.Add(Int32.Parse(myReaderPass.GetValue(0).ToString()));                                
+                                myReaderPass.NextResult();                                
+                            }
+                            
+                            if(isScored)
+                            {
+                                for (int i = 0; i < scores.Count; i++)
+                                    score_total += scores[i];
+                                score_total /= scores.Count*100;
+                                score_total *= 100;
+                                score_total = (float) Math.Round(score_total, 1);
+                            }
+                        }
+                    }
+                }
+
+                myConnection.Close();
+            }
+            return isScored;
         }
 
         /***************************************

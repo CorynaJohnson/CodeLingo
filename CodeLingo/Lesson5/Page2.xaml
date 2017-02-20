@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson5.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson5"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page2" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="cout" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="We've already seen the word &quot;cout&quot; throughout the previous lessons. now, we're going to learn about the input and output streams. cout is a statement that allows us to display information to the screen. "/><LineBreak/><Run/><LineBreak/><Run Text="the term cout stands for console output. you may have noticed that whenever we use cout to output to the console, we use the operator &quot;&lt;&lt;&quot;. This is called the insertion operator. "/></TextBlock>
+
+    </Grid>
+</Page>

@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="Data types" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,32,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="d"/><LineBreak/><Run Text="d"/><LineBreak/><Run Text="d"/><LineBreak/><Run Text="d"/><LineBreak/><Run Text="d"/><LineBreak/><Run Text="d"/><LineBreak/><Run Text="d"/><LineBreak/><Run Text="d"/></TextBlock>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="5,25,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="a DATA TYPE SPECIFIES THE TYPE OF DATA TO BE STORED IN THE VARIABLE. THIS TELLS THE AMOUNT OF MEMORY THE VARIABLES USES AND WHICH OPERATIONS CAN BE USED. "/><LineBreak/><Run/><LineBreak/><Run Text="We will go over some of the primitive data types. A primitive data type is a data type whose definition is built into the language. These values are primitive to C++."/></TextBlock>
 
     </Grid>
 </Page>

@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="Comments" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="Inline comment example:"/><LineBreak/><Run Text="//this is an inline comment"/><LineBreak/><Run Text="Remember, inline comments are only good for one line, while block comments can span multiple lines."/><LineBreak/><Run Text="Block Comment example:"/><LineBreak/><Run Text="/* this is"/><LineBreak/><Run Text="     a"/><LineBreak/><Run Text="     block comment */"/></TextBlock>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="Inline comment example:"/><LineBreak/><Run Text="//this is an inline comment"/><LineBreak/><Run Text="Remember, inline comments are only good for one line, while block comments can span multiple lines."/><LineBreak/><Run Text="Block Comment example:"/><LineBreak/><Run Foreground="#FF104214" Text="/* this is"/><LineBreak/><Run Foreground="#FF104214" Text="     a"/><LineBreak/><Run Foreground="#FF104214" Text="     block comment */"/></TextBlock>
 
     </Grid>
 </Page>

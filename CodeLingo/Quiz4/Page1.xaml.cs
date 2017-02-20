@@ -24,5 +24,17 @@ namespace CodeLingo.Quiz4
         {
             InitializeComponent();
         }
+
+        private void Answer_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (Answer.Text.ToLower().Trim() == "bool")
+            {
+                QuizTemplate.current_score = 100;
+            }
+            else
+            {
+                QuizTemplate.current_score = 0;
+            }
+        }
     }
 }

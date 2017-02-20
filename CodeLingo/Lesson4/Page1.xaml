@@ -14,7 +14,7 @@
         <Label x:Name="Step2" Content="2. Variable Declarations" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,37,0,0"/>
         <Label x:Name="Step3" Content="3. Data Types" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,53,0,0"/>
         <Label x:Name="Step4" Content="4. Naming rules for C++" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,70,0,0"/>
-        <Label x:Name="Step5" Content="5. Constants and #define" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="0,87,0,0"/>
+        <Label x:Name="Step5" Content="5. Constants" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="0,87,0,0"/>
 
     </Grid>
 </Page>

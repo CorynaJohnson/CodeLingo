@@ -167,15 +167,40 @@ namespace CodeLingo
                             {
                                 int quizid = Int32.Parse(myReaderPass["quizID"].ToString());
 
-                                var sql = "INSERT INTO CL_Scores (userID, quizID, m_score)" +
-                                    "VALUES (@userid, @quiznumber, @score);";
-                                using (var command = new SqlCommand(sql, myConnection))
+                                string selectcheck = "SELECT * FROM CL_Scores WHERE userID=@userID AND quizID=@quizID";
+                                using (SqlCommand cmd2 = new SqlCommand(selectcheck, myConnection))
                                 {
-                                    command.Parameters.AddWithValue("@userid", user_id);
-                                    command.Parameters.AddWithValue("@quiznumber", quizid);
-                                    command.Parameters.AddWithValue("@score", current_score);
-                                    command.Connection = myConnection;
-                                    command.ExecuteNonQuery();
+                                    cmd2.Parameters.AddWithValue("@quizID", quizid);
+                                    cmd2.Parameters.AddWithValue("@userID", user_id);
+
+                                    myReaderPass = cmd2.ExecuteReader();
+                                    
+                                    if (myReaderPass.Read())
+                                    {
+                                        var sql = "UPDATE CL_Scores SET m_score=@score" +
+                                        " WHERE userID=@userid AND quizID=@quiznumber;";
+                                        using (var command = new SqlCommand(sql, myConnection))
+                                        {
+                                            command.Parameters.AddWithValue("@userid", user_id);
+                                            command.Parameters.AddWithValue("@quiznumber", quizid);
+                                            command.Parameters.AddWithValue("@score", current_score);
+                                            command.Connection = myConnection;
+                                            command.ExecuteNonQuery();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        var sql = "INSERT INTO CL_Scores (userID, quizID, m_score)" +
+                                        "VALUES (@userid, @quiznumber, @score);";
+                                        using (var command = new SqlCommand(sql, myConnection))
+                                        {
+                                            command.Parameters.AddWithValue("@userid", user_id);
+                                            command.Parameters.AddWithValue("@quiznumber", quizid);
+                                            command.Parameters.AddWithValue("@score", current_score);
+                                            command.Connection = myConnection;
+                                            command.ExecuteNonQuery();
+                                        }
+                                    }                                   
                                 }
                             }
                         }

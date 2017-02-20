@@ -1,0 +1,18 @@
+﻿<Page x:Class="CodeLingo.Quiz4.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Quiz4"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page4" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="4. Is the following a valid naming rule?" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <Label x:Name="main" Content="int !myage = 13;" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Courier New" FontSize="18" Margin="80,0,0,154" FontWeight="Bold" Foreground="DarkBlue"/>
+        <RadioButton x:Name="True" Content="Yes" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
+        <RadioButton x:Name="False" Content="No" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
+
+    </Grid>
+</Page>

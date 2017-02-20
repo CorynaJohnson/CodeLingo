@@ -17,12 +17,26 @@
             <Grid x:Name="RightContent" Background="LightBlue" Margin="150,49,-150,15">
                 <Label x:Name="Lesson" HorizontalAlignment="Left" Height="30" Margin="11,2,0,0" Content="Lesson 1" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
                 <Button x:Name="Lesson1Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,7,0,0" Height="21" Uid="1"/>
-                <Label x:Name="Lesson2" HorizontalAlignment="Left" Height="30" Margin="11,28,0,0" Content="Lesson 2" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
+                <Label x:Name="Lesson2" HorizontalAlignment="Left" Height="30" Margin="11,27,0,0" Content="Lesson 2" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
                 <Button x:Name="Lesson2Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,33,0,0" Height="21" Uid="2"/>
                 <Button x:Name="Quiz2Button" Content="Take Quizzes" HorizontalAlignment="Left" Margin="113,33,0,0" VerticalAlignment="Top" Height="21" Width="76" FontFamily="Bebas Kai" FontSize="16" Click="Quiz_Button_Click" Visibility="Hidden" Uid="2"/>
+                <Label x:Name="Quiz2Score" HorizontalAlignment="Left" Height="30" Margin="189,27,0,0" Content="0%" VerticalAlignment="Top" Width="55" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829" Visibility="Hidden" Foreground="Green"/>
+
                 <Label x:Name="Lesson3" HorizontalAlignment="Left" Height="30" Margin="11,52,0,0" Content="Lesson 3" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
-                <Button x:Name="Lesson3Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,58,0,0" Height="21" Uid="3"/>
+                <Button x:Name="Lesson3Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,58,0,0" Height="21"  Uid="3"/>
                 <Button x:Name="Quiz3Button" Content="Take Quizzes" HorizontalAlignment="Left" Margin="113,58,0,0" VerticalAlignment="Top" Height="21" Width="76" FontFamily="Bebas Kai" FontSize="16" Click="Quiz_Button_Click" Visibility="Hidden" Uid="3"/>
+                <Label x:Name="Quiz3Score" HorizontalAlignment="Left" Height="30" Margin="189,53,0,0" Content="0%" VerticalAlignment="Top" Width="55" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829" Visibility="Hidden" Foreground="Green"/>
+
+                <Label x:Name="Lesson4" HorizontalAlignment="Left" Height="30" Margin="11,79,0,0" Content="Lesson 4" VerticalAlignment="Top" Width="80" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
+                <Button x:Name="Lesson4Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,84,0,0" Height="21" Uid="4"/>
+                <Button x:Name="Quiz4Button" Content="Take Quizzes" HorizontalAlignment="Left" Margin="113,84,0,0" VerticalAlignment="Top" Height="21" Width="76" FontFamily="Bebas Kai" FontSize="16" Click="Quiz_Button_Click" Visibility="Hidden" Uid="4"/>
+                <Label x:Name="Quiz4Score" HorizontalAlignment="Left" Height="30" Margin="189,78,0,0" Content="0%" VerticalAlignment="Top" Width="55" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829" Visibility="Hidden" Foreground="Green"/>
+
+                <Label x:Name="Lesson5" Height="30" Margin="11,105,153,0" Content="Lesson 5" VerticalAlignment="Top" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829"/>
+                <Button x:Name="Lesson5Button" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="19" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="1.087,-2.778" Click="lesson_button_Click" Margin="89,110,0,0" Height="21" Uid="5"/>
+                <Button x:Name="Quiz5Button" Content="Take Quizzes" HorizontalAlignment="Left" Margin="113,110,0,0" VerticalAlignment="Top" Height="21" Width="76" FontFamily="Bebas Kai" FontSize="16" Click="Quiz_Button_Click" Visibility="Hidden" Uid="5"/>
+                <Label x:Name="Quiz5Score" HorizontalAlignment="Left" Height="30" Margin="189,104,0,0" Content="0%" VerticalAlignment="Top" Width="55" BorderThickness="0"  FontFamily="Bebas Kai" FontSize="18.667" Background="{x:Null}" RenderTransformOrigin="1.414,0.829" Visibility="Hidden" Foreground="Green"/>
+
             </Grid>
         </Grid>
 

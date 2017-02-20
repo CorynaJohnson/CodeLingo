@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson4.Page16"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson4"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page16" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Constants" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="5,25,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="Some variables might not ever change in your code. an example of this is pi (π) or a speed limit variable (SPEED_LIMIT). By creating a constant value, it can make your code more readable and more easily modifiable. "/><LineBreak/><Run/><LineBreak/><Run Text="Say the speed limit is originally 65 mph and it was recently changed to 70 mph. we don't want to have to go through our code and change all the places where the number 65 is located. by using a constant we only have to change one place. Let's see some examples."/><LineBreak/></TextBlock>
+
+    </Grid>
+</Page>

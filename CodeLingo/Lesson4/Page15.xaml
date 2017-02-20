@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson4.Page15"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson4"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page15" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Naming rules" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="5,25,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="The following rules are for c++ that we must follow when naming variables:"/><LineBreak/><Run Text="1. Variables can only be made up of letters, digits, and underscores."/><LineBreak/><Run Text="2. Variables can't start with a digit, they must begin with a letter or underscore."/><LineBreak/><Run Text="3. Variables can't be a reserved word (e.g., if, else, while, for)."/><LineBreak/></TextBlock>
+
+
+    </Grid>
+</Page>
