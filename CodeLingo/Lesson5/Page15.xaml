@@ -10,6 +10,6 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="debugging" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="b"/><LineBreak/><Run Text="r"/><LineBreak/><Run Text="e"/><LineBreak/><Run Text="a"/><LineBreak/><Run Text="k"/><LineBreak/><Run Text="p"/><LineBreak/><Run Text="o"/><LineBreak/><Run Text="i"/><LineBreak/><Run Text="n"/><LineBreak/><Run Text="t"/></TextBlock>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421" Text="Breakpoints accomplish the same basic functionality as Run to Cursor. You can have multiple breakpoints throughout your code, instead of just one. If Visual studio is started in debugging mode, it will run to the first breakpoint. Then other options like step over, step into, continue can all be used. "/>
     </Grid>
 </Page>

@@ -370,6 +370,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Lesson5\Page16.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Lesson5\Page2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -491,6 +495,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Quiz4\Page5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Quiz5\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Quiz5\Page2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -745,6 +757,9 @@
     <Compile Include="Lesson5\Page15.xaml.cs">
       <DependentUpon>Page15.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Lesson5\Page16.xaml.cs">
+      <DependentUpon>Page16.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lesson5\Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
@@ -837,6 +852,12 @@
     </Compile>
     <Compile Include="Quiz4\Page5.xaml.cs">
       <DependentUpon>Page5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz5\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz5\Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
     <Compile Include="QuizTemplate.xaml.cs">
       <DependentUpon>QuizTemplate.xaml</DependentUpon>
