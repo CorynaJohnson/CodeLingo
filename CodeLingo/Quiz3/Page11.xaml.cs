@@ -24,6 +24,7 @@ namespace CodeLingo.Quiz3
         public Page11()
         {
             InitializeComponent();
+            QuizTemplate.current_score = 0;
         }
 
         private void Drag_MouseMove(object sender, MouseEventArgs e)

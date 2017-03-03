@@ -1,0 +1,15 @@
+﻿<Page x:Class="CodeLingo.Lesson5.Page9"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson5"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page9" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="endl" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="If you remember, to get our cursor to go to the next line we use '\n'. the endl manipulator also moves the cursor to the next line and does a few other things. "/><LineBreak/><Run/><LineBreak/><Run Text="The term endl stands for &quot;end line&quot;. Along with moving our cursor, it also flushes the buffer. This means that it flushes, or dumps, the contents of the output buffer to the screen. This option is slower than using the '\n' option."/></TextBlock>
+    </Grid>
+</Page>

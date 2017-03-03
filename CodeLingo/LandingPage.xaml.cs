@@ -244,6 +244,7 @@ namespace CodeLingo
 
         private bool IsScored(int quiznumber)
         {
+            score_total = 0;
             bool isScored = false;
             using (SqlConnection myConnection = Connect_to_Database())
             {
@@ -287,7 +288,7 @@ namespace CodeLingo
                             {
                                 for (int i = 0; i < scores.Count; i++)
                                     score_total += scores[i];
-                                score_total /= scores.Count*100;
+                                score_total /= (scores.Count*100);
                                 score_total *= 100;
                                 score_total = (float) Math.Round(score_total, 1);
                             }

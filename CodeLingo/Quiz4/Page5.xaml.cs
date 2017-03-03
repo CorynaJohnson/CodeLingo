@@ -23,6 +23,7 @@ namespace CodeLingo.Quiz4
         public Page5()
         {
             InitializeComponent();
+            QuizTemplate.current_score = 0;
         }
 
         private void Drag_MouseMove(object sender, MouseEventArgs e)

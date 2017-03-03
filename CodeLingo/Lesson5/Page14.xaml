@@ -1,0 +1,15 @@
+﻿<Page x:Class="CodeLingo.Lesson5.Page14"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson5"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page14" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="debugging" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="While being able to step over each line of code is useful, it could take a lot of time to go through your program to find the error. If there are lines of code you have tested beforehand that you know work, we can skip those and jump to the cursor. "/><LineBreak/><Run/><LineBreak/><Run Text="The program will run normally until that line is reached. It will then stop and allow you to use the step tools, or allow you to run to cursor again. This is a hidden feature in visual studio, you can use this tool by doing ctrl-f10."/></TextBlock>
+    </Grid>
+</Page>
