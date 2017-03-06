@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson6.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson6"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page2" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Arithmetic" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="In C++, a wide range of mathematical operators are provided to use. Some examples are:"/><LineBreak/><Run Text="+&#x9;Addition"/><LineBreak/><Run Text="-&#x9;subtraction and negatives"/><LineBreak/><Run Text="*&#x9;Multiplication"/><LineBreak/><Run Text="/&#x9;division"/><LineBreak/><Run Text="%&#x9;modulus"/><LineBreak/><Run Text="Modulus is the remainder of dividing right operand into left operand. "/></TextBlock>
+
+    </Grid>
+</Page>

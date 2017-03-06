@@ -1,0 +1,20 @@
+﻿<Page x:Class="CodeLingo.Lesson6.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson6"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page1" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="This Lesson will cover the following: " HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <Label x:Name="Step1" Content="1. Arithmetic operators" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,19,0,0"/>
+        <Label x:Name="Step2" Content="2. Assignment operators" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,37,0,0"/>
+        <Label x:Name="Step3" Content="3. Increment and decrement operators" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,53,0,0"/>
+        <Label x:Name="Step4" Content="4. Compound assignment operators" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,70,0,0"/>
+        <Label x:Name="Step5" Content="5. The pow function" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Margin="-1,86,0,0"/>
+
+    </Grid>
+</Page>

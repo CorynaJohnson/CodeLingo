@@ -16,23 +16,26 @@ using System.Windows.Shapes;
 namespace CodeLingo.Quiz5
 {
     /// <summary>
-    /// Interaction logic for Page2.xaml
+    /// Interaction logic for Page6.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Page6 : Page
     {
-        public Page2()
+        public Page6()
         {
             InitializeComponent();
-            QuizTemplate.current_score = 0;
         }
 
         private void HandleCheck(object sender, RoutedEventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-            if (rb.Name == "True")
-                QuizTemplate.current_score = 0;
-            else
+            if (rb.Name == "A")
                 QuizTemplate.current_score = 100;
+            else if (rb.Name == "B")
+                QuizTemplate.current_score = 0;
+            else if (rb.Name == "C")
+                QuizTemplate.current_score = 0;
+            else if (rb.Name == "D")
+                QuizTemplate.current_score = 0;
         }
     }
 }

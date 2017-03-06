@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CodeLingo.Quiz5
 {
     /// <summary>
-    /// Interaction logic for Page2.xaml
+    /// Interaction logic for Page4.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Page4 : Page
     {
-        public Page2()
+        public Page4()
         {
             InitializeComponent();
             QuizTemplate.current_score = 0;

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CodeLingo.Quiz5
 {
     /// <summary>
-    /// Interaction logic for Page2.xaml
+    /// Interaction logic for Page5.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Page5 : Page
     {
-        public Page2()
+        public Page5()
         {
             InitializeComponent();
             QuizTemplate.current_score = 0;
@@ -29,10 +29,14 @@ namespace CodeLingo.Quiz5
         private void HandleCheck(object sender, RoutedEventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-            if (rb.Name == "True")
+            if (rb.Name == "A")
                 QuizTemplate.current_score = 0;
-            else
+            else if (rb.Name == "B")
+                QuizTemplate.current_score = 0;
+            else if (rb.Name == "C")
                 QuizTemplate.current_score = 100;
+            else if (rb.Name == "D")
+                QuizTemplate.current_score = 0;
         }
     }
 }

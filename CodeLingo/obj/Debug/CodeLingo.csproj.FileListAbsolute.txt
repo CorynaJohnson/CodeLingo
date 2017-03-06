@@ -488,3 +488,7 @@ C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\Regist
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\CodeLingo.g.resources
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\CodeLingo.Properties.Resources.resources
 C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\CodeLingo.csproj.GenerateResource.Cache
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\Lesson5\Page16.g.cs
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\Quiz5\Page1.g.cs
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\Quiz5\Page2.g.cs
+C:\Users\Coryna\Documents\Visual Studio 2015\Projects\CodeLingo\obj\Debug\Quiz5\Page3.g.cs

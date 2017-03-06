@@ -1,0 +1,24 @@
+﻿<Page x:Class="CodeLingo.Quiz5.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Quiz5"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page3" Width="448" Height="208">
+
+    <Canvas>
+        <Label x:Name="Subtitle" Content="3. display a prompt and read a person's age" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <Label x:Name="extra" Content="Drag the header and using statement to the boxes below" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="18"  Canvas.Top="17" Canvas.Left="25"/>
+        <Label x:Name="Header" Content="Prompt" Canvas.Left="140" Canvas.Top="44" AllowDrop="True" Drop="Target_Drop" Width="190" Background="White" HorizontalContentAlignment="Center"/>
+        <Label x:Name="Using" Content="Read" Canvas.Left="140" Canvas.Top="75" AllowDrop="True" Drop="Target_Drop" Width="190" Background="White" HorizontalContentAlignment="Center"/>
+
+        <Label x:Name="op1" Content="cout &lt;&lt; Enter age;" Canvas.Left="50" Canvas.Top="172" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op2" Content="cin &gt;&gt; #_age;" Canvas.Left="245" Canvas.Top="172" MouseMove="Drag_MouseMove" Width="170" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op3" Content="cout &gt;&gt; &quot;Enter your age: &quot;; " Canvas.Left="50" Canvas.Top="106" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op4" Content="cout &lt;&lt; &quot;Enter your age: &quot;;" Canvas.Left="245" Canvas.Top="139" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op5" Content="cin &lt;&lt; age;" Canvas.Left="245" Canvas.Top="106" MouseMove="Drag_MouseMove" Width="170" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op6" Content="cin &gt;&gt; age;" Canvas.Left="50" Canvas.Top="139" MouseMove="Drag_MouseMove" Width="170" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Center"/>
+    </Canvas>
+</Page>

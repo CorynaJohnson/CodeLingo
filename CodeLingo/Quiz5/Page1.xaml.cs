@@ -23,6 +23,7 @@ namespace CodeLingo.Quiz5
         public Page1()
         {
             InitializeComponent();
+            QuizTemplate.current_score = 0;
         }
 
         private void HandleCheck(object sender, RoutedEventArgs e)
