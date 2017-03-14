@@ -28,6 +28,7 @@ namespace CodeLingo.Quiz6
 
         private void Answer_TextChanged(object sender, TextChangedEventArgs e)
         {
+            QuizTemplate.current_score = 0;
             if (Answer.Text.Trim() == "0")
             {
                 QuizTemplate.current_score = 100;

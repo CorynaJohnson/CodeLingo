@@ -83,8 +83,9 @@ namespace CodeLingo
                 else if (current_score > 0 && current_score < 100)
                     System.Windows.Forms.MessageBox.Show("Partial Credit!");
                 else
-                    System.Windows.Forms.MessageBox.Show("Incorrect!");
+                    System.Windows.Forms.MessageBox.Show("Incorrect!");                
                 QuizComplete();
+                QuizTemplate.current_score = 0;
                 current_page++;
             }
             //if last page, show home button
@@ -94,6 +95,7 @@ namespace CodeLingo
                 //    System.Windows.Forms.MessageBox.Show("Correct!");
                 //else
                 //    System.Windows.Forms.MessageBox.Show("Incorrect!");
+                
                 Home_Button.Visibility = Visibility.Visible;
             }
         }
@@ -105,8 +107,9 @@ namespace CodeLingo
             else if (current_score > 0 && current_score < 100)
                 System.Windows.Forms.MessageBox.Show("Partial Credit!");
             else
-                System.Windows.Forms.MessageBox.Show("Incorrect!");
+                System.Windows.Forms.MessageBox.Show("Incorrect!");            
             QuizComplete();
+            QuizTemplate.current_score = 0;
             LandingPage page = new LandingPage(username);
             page.Show();
             this.Hide();

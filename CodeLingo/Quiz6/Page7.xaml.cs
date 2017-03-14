@@ -27,6 +27,7 @@ namespace CodeLingo.Quiz6
         }
         private void HandleCheck(object sender, RoutedEventArgs e)
         {
+            QuizTemplate.current_score = 0;
             RadioButton rb = sender as RadioButton;
             if (rb.Name == "A")
                 QuizTemplate.current_score = 100;
