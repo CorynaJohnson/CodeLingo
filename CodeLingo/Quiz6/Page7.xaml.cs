@@ -13,19 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CodeLingo.Quiz5
+namespace CodeLingo.Quiz6
 {
     /// <summary>
-    /// Interaction logic for Page6.xaml
+    /// Interaction logic for Page7.xaml
     /// </summary>
-    public partial class Page6 : Page
+    public partial class Page7 : Page
     {
-        public Page6()
+        public Page7()
         {
             InitializeComponent();
             QuizTemplate.current_score = 0;
         }
-
         private void HandleCheck(object sender, RoutedEventArgs e)
         {
             RadioButton rb = sender as RadioButton;

@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson6.Page16"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson6"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page16" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Mathematical Functions" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="Next, let's talk about the "/><Run FontSize="12" FontFamily="Courier New" Text="sqrt"/><Run Text=" function. This function relates to finding the square root of a value. The syntax for this function is: "/><LineBreak/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&lt;floating_point_1&gt; = sqrt( &lt;floating_point_2&gt; );"/><LineBreak/><Run/><LineBreak/><Run FontSize="16" FontFamily="Bebas Kai" Text="The parameters that this function accepts must be a float, double, or long float data type. Also, it is important to remember that you can not take the square root of a negative value."/></TextBlock>
+
+    </Grid>
+</Page>

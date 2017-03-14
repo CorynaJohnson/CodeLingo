@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson6.Page9"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson6"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page9" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Compound assignment operators" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="content_Copy" HorizontalAlignment="Left" Margin="4,32,0,0" FontFamily="Courier New" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12" Height="164" Width="444"><Run FontWeight="Bold" Text="Operator&#x9;&#x9;Statement &#x9;&#x9;Expansion"/><LineBreak/><Run Text="+=&#x9;&#x9;&#x9;a += 5;&#x9;&#x9;a = a + 5;"/><LineBreak/><Run Text="-=&#x9;&#x9;&#x9;a -= b;&#x9;&#x9;a = a - b;"/><LineBreak/><Run Text="*=&#x9;&#x9;&#x9;a *= b + .1;&#x9;&#x9;a = a * (b + .1);"/><LineBreak/><Run Text="/= &#x9;&#x9;&#x9;a /= b + c;&#x9;&#x9;a = a / (b +c);"/><LineBreak/><Run Text="%=&#x9;&#x9;&#x9;a %= 2;&#x9;&#x9;a = a % 2;"/></TextBlock>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text=""/><LineBreak/><Run Text="Make sure you note the order of operations for the more advanced statements shown above. Parenthesis must be used in order to meet the shortcut statements. "/></TextBlock>
+
+    </Grid>
+</Page>

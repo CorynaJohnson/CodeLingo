@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CodeLingo.Quiz5
+namespace CodeLingo.Quiz6
 {
     /// <summary>
-    /// Interaction logic for Page6.xaml
+    /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class Page6 : Page
+    public partial class Page2 : Page
     {
-        public Page6()
+        public Page2()
         {
             InitializeComponent();
             QuizTemplate.current_score = 0;
@@ -29,13 +29,9 @@ namespace CodeLingo.Quiz5
         private void HandleCheck(object sender, RoutedEventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-            if (rb.Name == "A")
+            if (rb.Name == "True")
                 QuizTemplate.current_score = 100;
-            else if (rb.Name == "B")
-                QuizTemplate.current_score = 0;
-            else if (rb.Name == "C")
-                QuizTemplate.current_score = 0;
-            else if (rb.Name == "D")
+            else
                 QuizTemplate.current_score = 0;
         }
     }

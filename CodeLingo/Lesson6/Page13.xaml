@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson6.Page13"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson6"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page13" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Mathematical Functions" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="The first of the mathematical functions we will discuss is the "/><Run FontSize="12" FontFamily="Courier New" Text="pow "/><Run Text="function. This function handles the exponentials of mathematical equations and formulas. the syntax is as follows:"/><LineBreak/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&lt;left value&gt; = pow( &lt;base&gt;, &lt;power&gt; );"/><LineBreak/><LineBreak/><Run Text="The base parameter can be any numeric data type except an int. The power parameter can be any numeric data type. "/><LineBreak/><LineBreak/></TextBlock>
+
+    </Grid>
+</Page>
