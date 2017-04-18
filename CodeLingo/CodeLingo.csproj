@@ -486,6 +486,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Lesson7\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Quiz2\Page1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -979,6 +983,9 @@
     </Compile>
     <Compile Include="Lesson6\Page9.xaml.cs">
       <DependentUpon>Page9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Quiz2\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>

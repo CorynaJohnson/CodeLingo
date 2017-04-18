@@ -37,7 +37,7 @@ namespace CodeLingo
 
             if (ValidateUser())
             {
-                System.Windows.Forms.MessageBox.Show("Login Successful");
+                //System.Windows.Forms.MessageBox.Show("Login Successful");
 
                 LandingPage page = new LandingPage(UserNameField.Text);
                 page.Show();
