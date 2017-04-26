@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson7.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson7"
+      mc:Ignorable="d" 
+        d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page4" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Conditional Expressions" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run Text="Let's see a few examples. Remember, a single equal sign (=) is an assignment operator while a double equal (==) is a comparison for equality."/><LineBreak/><Run/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="int expr1 = 0, expr2 = 5; "/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="bool result; &#x9;"/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="&#x9;//holds a true or false value"/><LineBreak FontSize="12" FontFamily="Courier New"/><Run FontSize="12" FontFamily="Courier New" Text="result = expr1 == 0;&#x9;"/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="//true"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="result = expr1 &gt;= expr2;&#x9;"/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="//false"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="result = expr1 &lt; expr2;&#x9;"/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="//true"/><LineBreak FontSize="12" FontFamily="Courier New"/><LineBreak FontSize="12" FontFamily="Courier New"/></TextBlock>
+
+    </Grid>
+</Page>
