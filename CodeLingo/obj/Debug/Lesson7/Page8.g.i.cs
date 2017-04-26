@@ -40,6 +40,22 @@ namespace CodeLingo.Lesson7 {
     /// </summary>
     public partial class Page8 : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 12 "..\..\..\Lesson7\Page8.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label Subtitle;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 13 "..\..\..\Lesson7\Page8.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBlock Paragraph;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -68,6 +84,15 @@ namespace CodeLingo.Lesson7 {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.Subtitle = ((System.Windows.Controls.Label)(target));
+            return;
+            case 2:
+            this.Paragraph = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            }
             this._contentLoaded = true;
         }
     }
