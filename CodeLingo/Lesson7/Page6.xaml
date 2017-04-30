@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="Subtitle" Content="Logical Operators" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run FontWeight="Bold" Text="Logical operator&#x9;&#x9;Description"/><LineBreak/><Run Text="&amp;&amp;&#x9;&#x9;&#x9;AND"/><LineBreak/><Run Text="||&#x9;&#x9;&#x9;OR"/><LineBreak/><Run Text="!&#x9;&#x9;&#x9;NOT"/><LineBreak/><Run FontWeight="Bold" Text="Condition1&#x9;            condition2           &amp;&amp; result          || result"/><LineBreak/><Run Text="true&#x9;            True&#x9;&#x9;  true&#x9;           true"/><LineBreak/><Run Text="true&#x9;            false&#x9;  false&#x9;           true"/><LineBreak/><Run Text="false&#x9;            true&#x9;&#x9;  false&#x9;           true"/><LineBreak/><Run Text="false &#x9;            false&#x9;  false&#x9;           false"/><LineBreak/><LineBreak/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421"><Run FontWeight="Bold" Text="Logical operator&#x9;&#x9;Description"/><LineBreak/><Run Text="&amp;&amp;&#x9;&#x9;&#x9;AND"/><LineBreak/><Run Text="||&#x9;&#x9;&#x9;OR"/><LineBreak/><Run Text="!&#x9;&#x9;&#x9;NOT"/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
 
     </Grid>
 </Page>

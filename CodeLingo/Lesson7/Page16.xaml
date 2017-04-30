@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson7.Page16"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson7"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page16" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="else if statement" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420" Grid.RowSpan="2"><Run FontSize="12" FontFamily="Courier New" Text="if ( grade &gt;= 90 )"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;cout &lt;&lt; &quot;You got an A!&quot; &lt;&lt; endl;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="else if ( grade &gt;= 80 &amp;&amp; grade &lt; 90 )"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;cout &lt;&lt; &quot;You got a B!&quot; &lt;&lt; endl;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="else if ( grade &gt;= 70 &amp;&amp; grade &lt; 80 )"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;cout &lt;&lt; &quot;You got a C!&quot; &lt;&lt; endl;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="else"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;cout &lt;&lt; &quot;Do better next time!&quot; &lt;&lt; endl;"/><LineBreak/><Run Text="If the condition is true for any of the statements it will stop checking the others. if &quot;grade&quot; is 80, it will go into the second statement, execute the cout statement, and then skip the other statements below it."/><LineBreak/><Run/></TextBlock>
+
+
+    </Grid>
+</Page>

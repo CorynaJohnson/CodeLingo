@@ -490,7 +490,63 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Lesson7\Page10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page12.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page13.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page14.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page15.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page16.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page17.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page18.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page19.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Lesson7\Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page20.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page21.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page22.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page23.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -515,6 +571,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Lesson7\Page8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson7\Page9.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -1015,8 +1075,50 @@
     <Compile Include="Lesson7\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Lesson7\Page10.xaml.cs">
+      <DependentUpon>Page10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page11.xaml.cs">
+      <DependentUpon>Page11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page12.xaml.cs">
+      <DependentUpon>Page12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page13.xaml.cs">
+      <DependentUpon>Page13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page14.xaml.cs">
+      <DependentUpon>Page14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page15.xaml.cs">
+      <DependentUpon>Page15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page16.xaml.cs">
+      <DependentUpon>Page16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page17.xaml.cs">
+      <DependentUpon>Page17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page18.xaml.cs">
+      <DependentUpon>Page18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page19.xaml.cs">
+      <DependentUpon>Page19.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lesson7\Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page20.xaml.cs">
+      <DependentUpon>Page20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page21.xaml.cs">
+      <DependentUpon>Page21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page22.xaml.cs">
+      <DependentUpon>Page22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page23.xaml.cs">
+      <DependentUpon>Page23.xaml</DependentUpon>
     </Compile>
     <Compile Include="Lesson7\Page3.xaml.cs">
       <DependentUpon>Page3.xaml</DependentUpon>
@@ -1035,6 +1137,9 @@
     </Compile>
     <Compile Include="Lesson7\Page8.xaml.cs">
       <DependentUpon>Page8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7\Page9.xaml.cs">
+      <DependentUpon>Page9.xaml</DependentUpon>
     </Compile>
     <Compile Include="Quiz2\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>

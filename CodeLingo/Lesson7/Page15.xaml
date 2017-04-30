@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson7.Page15"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson7"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page15" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="else statement" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420" Grid.RowSpan="2"><Run FontSize="12" FontFamily="Courier New" Text="if ( grade &gt;= 60 )"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;pass = true;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="else"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="{}{"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;pass = false;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;cout &lt;&lt; &quot;Hope you do better next time. &quot; &lt;&lt; endl;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="}"/><LineBreak/><Run Text="Now what if you want to check multiple ranges to see what your grade is? If you do individual &quot;if&quot; statements then it's inefficient. We can use &quot;else if&quot; to check multiple statements."/><LineBreak/><Run/></TextBlock>
+
+
+    </Grid>
+</Page>

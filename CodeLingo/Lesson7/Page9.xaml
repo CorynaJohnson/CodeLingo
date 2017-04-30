@@ -5,10 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CodeLingo.Lesson7"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page9">
+        d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page9" Width="448" Height="208">
 
     <Grid>
-        
+        <Label x:Name="Subtitle" Content="Logical Operators" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,-75" FontFamily="Bebas Kai" FontSize="16" Width="440"><Run FontSize="12" FontFamily="Courier New" Text="int int_exp1 = 0, int_exp2 = 5;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="float float_exp = 9.0f;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="char char_exp = 'a';"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="const int CONST_INT_EXP = 9;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="bool result;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text=""/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="result = int_exp1 &lt; int_exp2 &amp;&amp; float_exp == 9.0; "/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="//T"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="result = int_exp1 &gt; CONST_INT_EXP || float_exp == 9.0;"/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="//T"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="result == !(float_exp == 9.0 || int_exp1 &gt; CONST_INT_EXP);"/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="//F"/><LineBreak/><LineBreak/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New" Text="//short-circuit evaluation"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="result = float_exp == 9.0 || int_exp1 &gt; CONST_INT_EXP;"/><LineBreak/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New"/><LineBreak/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New"/><LineBreak/><Run Foreground="#FF104214" FontWeight="Bold" FontSize="12" FontFamily="Courier New"/><LineBreak/></TextBlock>
+
+
     </Grid>
 </Page>
