@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson7.Page26"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson7"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page26" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420" Grid.RowSpan="2"><Run Text="Here is an example of a menu that could be used for a switch statement:"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;Student Grade Program"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;      -Menu-"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="1. Enter name"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="2. Enter test scores"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="3. Display test scores"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="4. Exit"/><LineBreak/><Run FontSize="12" FontFamily="Courier New"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="Please enter your choice from the list above:"/></TextBlock>
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson7.Page27"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson7"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page27" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="menu" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420" Grid.RowSpan="2"><Run FontSize="12" FontFamily="Courier New" Text="int menu_option = 0;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="string student_name;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="switch (menu_option)"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="{}{"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;case 1:"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;   cout &lt;&lt; &quot;Enter student name: &quot; &lt;&lt; endl;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;   cin &gt;&gt; student_name;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;   break;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;..."/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;case 9:"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;   cout &lt;&lt; &quot;Now exiting.&quot; &lt;&lt; endl;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;   break;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="}"/></TextBlock>
+
+    </Grid>
+</Page>
