@@ -9,7 +9,7 @@
       Title="Page2" Width="448" Height="208">
 
     <Grid>
-        <Label x:Name="Subtitle" Content="2. Is the following statement correct?&#xA;&#x9;int_exp1 =&gt; int_exp2" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,155" FontWeight="Bold" Height="55"/>
+        <Label x:Name="Subtitle" Content="2. Is the following statement correct?&#xA;&#x9; int_exp1 =&gt; int_exp2" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,155" FontWeight="Bold" Height="55"/>
         <RadioButton x:Name="True" Content="True" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
         <RadioButton x:Name="False" Content="False" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="16" Checked = "HandleCheck"/>
 

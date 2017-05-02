@@ -9,9 +9,10 @@
       Title="Page5" Width="448" Height="208">
 
     <Grid>
-        <TextBlock x:Name="Subtitle" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="5,0,0,158" FontWeight="Bold" Height="46" Text="5. Insert the correct relational operator to make the statement true:" TextWrapping="Wrap"/>
-        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="16" Margin="44,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="22" TextChanged="Answer_TextChanged" FontFamily="Bebas Kai" FontSize="18"/>
         <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,48,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420"><Run FontSize="12" FontFamily="Courier New"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="if (a    0)"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="   cout &lt;&lt; &quot;a is greater than 0!&quot; &lt;&lt; endl;"/></TextBlock>
+
+        <TextBlock x:Name="Subtitle" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="5,0,0,158" FontWeight="Bold" Height="46" Text="5. Insert the correct relational operator to make the statement true:" TextWrapping="Wrap"/>
+        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="16" Margin="44,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="22" TextChanged="Answer_TextChanged" FontFamily="Bebas Kai" FontSize="14"/>
 
     </Grid>
 </Page>

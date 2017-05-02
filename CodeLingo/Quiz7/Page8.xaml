@@ -11,7 +11,7 @@
     <Grid>
         <TextBlock x:Name="Subtitle" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="5,0,0,158" FontWeight="Bold" Height="46" Text="8. What is the final value in the variable?" TextWrapping="Wrap"/>
         <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="5,24,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420"><Run FontSize="12" FontFamily="Courier New" Text="int a = 1;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="a = a &lt;= 1 ? 10 : 100;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="a is"/></TextBlock>
-        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="24" Margin="43,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" TextChanged="Answer_TextChanged" FontFamily="Bebas Kai" FontSize="18"/>
+        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="24" Margin="43,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" TextChanged="Answer_TextChanged" FontFamily="Bebas Kai" FontSize="14"/>
 
     </Grid>
 </Page>

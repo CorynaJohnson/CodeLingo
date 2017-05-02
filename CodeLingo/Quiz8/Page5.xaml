@@ -5,10 +5,20 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CodeLingo.Quiz8"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page5">
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page3" Width="448" Height="208">
 
-    <Grid>
-        
-    </Grid>
+    <Canvas>
+        <Label x:Name="Subtitle" Content="5. Build a for loop that counts up to 5." HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,176" FontWeight="Bold"/>
+        <Label x:Name="Header" Content="&lt;init-expr&gt;" Canvas.Left="25" Canvas.Top="49" AllowDrop="True" Drop="Target_Drop" Width="117" Background="White" HorizontalContentAlignment="Center"/>
+        <Label x:Name="Using" Content="&lt;condition&gt;" Canvas.Left="154" Canvas.Top="49" AllowDrop="True" Drop="Target_Drop" Width="117" Background="White" HorizontalContentAlignment="Center"/>
+        <Label x:Name="Last" Content="&lt;post-loop-expr&gt;" Canvas.Left="283" Canvas.Top="49" AllowDrop="True" Drop="Target_Drop" Width="117" Background="White" HorizontalContentAlignment="Center"/>
+
+        <Label x:Name="op1" Content="j &lt; 5;" Canvas.Left="50" Canvas.Top="172" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op2" Content="i--;" Canvas.Left="245" Canvas.Top="172" MouseMove="Drag_MouseMove" Width="170" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op3" Content="int i &lt; 3;" Canvas.Left="50" Canvas.Top="106" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op4" Content="j &lt; 5" Canvas.Left="245" Canvas.Top="139" MouseMove="Drag_MouseMove" BorderBrush="Black" BorderThickness="1" Width="170" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op5" Content="int j = 0;" Canvas.Left="245" Canvas.Top="106" MouseMove="Drag_MouseMove" Width="170" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="op6" Content="j++" Canvas.Left="50" Canvas.Top="139" MouseMove="Drag_MouseMove" Width="170" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Center"/>
+    </Canvas>
 </Page>

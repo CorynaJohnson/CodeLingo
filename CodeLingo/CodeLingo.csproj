@@ -870,6 +870,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Quiz8\Page5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="QuizTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -1495,6 +1499,9 @@
     </Compile>
     <Compile Include="Quiz8\Page4.xaml.cs">
       <DependentUpon>Page4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz8\Page5.xaml.cs">
+      <DependentUpon>Page5.xaml</DependentUpon>
     </Compile>
     <Compile Include="QuizTemplate.xaml.cs">
       <DependentUpon>QuizTemplate.xaml</DependentUpon>

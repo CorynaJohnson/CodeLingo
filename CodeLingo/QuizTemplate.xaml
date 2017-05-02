@@ -11,7 +11,7 @@
             <Grid Background="Black" Opacity=".5" Margin="-31,0,-30,0"/>
             <Label x:Name="Title" Height="45" Margin="149,4,101,265" Content="Quizzes for Lesson " FontSize="32" FontFamily="Bebas Kai" BorderThickness="0" Background="{x:Null}"/>
             <Button x:Name="Next_Button" Content="Next" HorizontalAlignment="Left" Margin="418,17,0,0" VerticalAlignment="Top" Width="75" FontFamily="Bebas Kai" FontSize="16" RenderTransformOrigin="0.47,0.879" Click="Next_Button_Click"/>
-            <Button x:Name="Back_Button" Content="Back" HorizontalAlignment="Left" Margin="45,14,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Back_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16"/>
+            <Button x:Name="Back_Button" Content="Back" HorizontalAlignment="Left" Margin="45,14,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Back_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16" Visibility="Hidden"/>
             <Button x:Name="Home_Button" Content="Home" HorizontalAlignment="Left" Margin="418,17,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Home_Button_Click" Background="#FFF1F3FD" FontFamily="Bebas Kai" FontSize="16" Visibility="Hidden"/>
             <Grid x:Name="Login" Margin="6,40,-6,10">
                 <Border

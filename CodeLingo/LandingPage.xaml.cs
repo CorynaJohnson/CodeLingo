@@ -161,6 +161,10 @@ namespace CodeLingo
                 Quiz5Button.Visibility = Visibility.Visible;
             if (IsLessonComplete(6))
                 Quiz6Button.Visibility = Visibility.Visible;
+            if (IsLessonComplete(7))
+                Quiz7Button.Visibility = Visibility.Visible;
+            if (IsLessonComplete(8))
+                Quiz8Button.Visibility = Visibility.Visible;
         }
 
         private void ViewableScores()
@@ -189,6 +193,16 @@ namespace CodeLingo
             {
                 Quiz6Score.Content = score_total + "%";
                 Quiz6Score.Visibility = Visibility.Visible;
+            }
+            if (IsScored(7))
+            {
+                Quiz7Score.Content = score_total + "%";
+                Quiz7Score.Visibility = Visibility.Visible;
+            }
+            if (IsScored(8))
+            {
+                Quiz8Score.Content = score_total + "%";
+                Quiz8Score.Visibility = Visibility.Visible;
             }
         }
 
