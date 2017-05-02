@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson8.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson8"
+      mc:Ignorable="d" 
+       d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page2" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="while loop" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420"><Run Text="In the last lesson we learned about conditional statements. Now we are going to expand on that and learn how to conditionally repeat one or more statements or actions. These are the basic &quot;while&quot;, &quot;Do-while&quot;, and &quot;for&quot; statements. first let's talk about the while loop."/><LineBreak/><LineBreak/><Run Text="The while loop has the following syntax:"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;while ( &lt;condition&gt; )"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&#x9;&#x9;&lt;action&gt;"/></TextBlock>
+
+    </Grid>
+</Page>

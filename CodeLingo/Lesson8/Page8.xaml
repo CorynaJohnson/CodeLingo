@@ -1,0 +1,16 @@
+﻿<Page x:Class="CodeLingo.Lesson8.Page8"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson8"
+      mc:Ignorable="d" 
+        d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page8" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="do-while loop" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Bebas Kai" FontSize="16" Width="421" Text="do-while loops are a great loop to use for menu driven programs. this allows the user to keep entering in options until they choose to exit the menu. Also, since this loop does not use a priming read, the menu will always be displayed to the user first. "/>
+
+    </Grid>
+</Page>

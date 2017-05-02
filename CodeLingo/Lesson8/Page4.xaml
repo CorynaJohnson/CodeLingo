@@ -1,0 +1,17 @@
+﻿<Page x:Class="CodeLingo.Lesson8.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CodeLingo.Lesson8"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page4" Width="448" Height="208">
+
+    <Grid>
+        <Label x:Name="Subtitle" Content="while loop" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420" Grid.RowSpan="2"><Run FontSize="12" FontFamily="Courier New" Text="char again = '\0';"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="int operand1 = 0, operand2 = 0;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="cout &lt;&lt; &quot;Do you wish to multiply two numbers?(y/n) &quot;;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="cin &gt;&gt; again;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="while(again == 'y' || again == 'Y')"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="{}{  cout &lt;&lt; &quot;Enter first number: &quot;;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="   cin &gt;&gt; operand1;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="   cout &lt;&lt; &quot;Enter second number: &quot;;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="   cin &gt;&gt; operand2;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="   cout &lt;&lt; &quot;Result: &quot; &lt;&lt; operand1 * operand2 &lt;&lt; endl;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="   cout &lt;&lt; &quot;Do you wish to multiply two numbers?(y/n) &quot;;"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="   cin &gt;&gt; again;  "/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="}"/></TextBlock>
+
+
+    </Grid>
+</Page>

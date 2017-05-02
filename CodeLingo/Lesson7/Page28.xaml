@@ -6,11 +6,11 @@
       xmlns:local="clr-namespace:CodeLingo.Lesson7"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page27" Width="448" Height="208">
+      Title="Page28" Width="448" Height="208">
 
     <Grid>
         <Label x:Name="Subtitle" Content="Ternary operator" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bebas Kai" FontSize="20" Margin="-1,-2,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420" Grid.RowSpan="2"><Run Text="A ternary operator is like an inline &quot;if&quot; statement. It has three operands and the expression returned is based on the evaluation of the condition. The basic syntax is:"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="Paragraph" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="6,26,0,0" FontFamily="Bebas Kai" FontSize="16" Width="420" Grid.RowSpan="2"><Run Text="A ternary operator is like an inline &quot;if&quot; statement. It has three operands and the expression returned is based on the evaluation of the condition. The basic syntax is:"/><LineBreak/><Run FontSize="12" FontFamily="Courier New" Text="&lt;condition&gt; ? &lt;true expression&gt; : &lt;false expression&gt;"/><LineBreak/><LineBreak/><Run Text="Let's do an example of finding the larger of two numbers and then storing the larger value in a variable."/></TextBlock>
 
     </Grid>
 </Page>
